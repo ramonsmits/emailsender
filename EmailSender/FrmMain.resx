@@ -306,7 +306,7 @@
     <value>S&amp;top</value>
   </data>
   <data name="menuItem34.Text" xml:space="preserve">
-    <value>&amp;Send</value>
+    <value>&amp;Sending Emails</value>
   </data>
   <data name="menuItem40.Text" xml:space="preserve">
     <value>Online User &amp;Guide</value>
@@ -336,12 +336,6 @@
   <data name="statusBarMain.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 328</value>
   </data>
-  <data name="statusBarPanelMsg.AutoSize" type="System.Windows.Forms.StatusBarPanelAutoSize, System.Windows.Forms">
-    <value>Spring</value>
-  </data>
-  <data name="statusBarPanelMsg.BorderStyle" type="System.Windows.Forms.StatusBarPanelBorderStyle, System.Windows.Forms">
-    <value>None</value>
-  </data>
   <data name="statusBarPanelMsg.Name" xml:space="preserve">
     <value>statusBarPanelMsg</value>
   </data>
@@ -350,9 +344,6 @@
   </data>
   <data name="statusBarPanelMsg.Width" type="System.Int32, mscorlib">
     <value>329</value>
-  </data>
-  <data name="statusBarPanelStatus.AutoSize" type="System.Windows.Forms.StatusBarPanelAutoSize, System.Windows.Forms">
-    <value>Contents</value>
   </data>
   <data name="statusBarPanelStatus.Name" xml:space="preserve">
     <value>statusBarPanelStatus</value>
@@ -363,9 +354,6 @@
   <data name="statusBarPanelStatus.Width" type="System.Int32, mscorlib">
     <value>46</value>
   </data>
-  <data name="statusBarPanelSuccess.AutoSize" type="System.Windows.Forms.StatusBarPanelAutoSize, System.Windows.Forms">
-    <value>Contents</value>
-  </data>
   <data name="statusBarPanelSuccess.Name" xml:space="preserve">
     <value>statusBarPanelSuccess</value>
   </data>
@@ -374,9 +362,6 @@
   </data>
   <data name="statusBarPanelSuccess.Width" type="System.Int32, mscorlib">
     <value>69</value>
-  </data>
-  <data name="statusBarPanelFail.AutoSize" type="System.Windows.Forms.StatusBarPanelAutoSize, System.Windows.Forms">
-    <value>Contents</value>
   </data>
   <data name="statusBarPanelFail.Name" xml:space="preserve">
     <value>statusBarPanelFail</value>
@@ -387,9 +372,6 @@
   <data name="statusBarPanelFail.Width" type="System.Int32, mscorlib">
     <value>45</value>
   </data>
-  <data name="statusBarPanelTotal.AutoSize" type="System.Windows.Forms.StatusBarPanelAutoSize, System.Windows.Forms">
-    <value>Contents</value>
-  </data>
   <data name="statusBarPanelTotal.Name" xml:space="preserve">
     <value>statusBarPanelTotal</value>
   </data>
@@ -398,12 +380,6 @@
   </data>
   <data name="statusBarPanelTotal.Width" type="System.Int32, mscorlib">
     <value>52</value>
-  </data>
-  <data name="statusBarPanel1.AutoSize" type="System.Windows.Forms.StatusBarPanelAutoSize, System.Windows.Forms">
-    <value>Contents</value>
-  </data>
-  <data name="statusBarPanel1.BorderStyle" type="System.Windows.Forms.StatusBarPanelBorderStyle, System.Windows.Forms">
-    <value>None</value>
   </data>
   <data name="statusBarPanel1.Name" xml:space="preserve">
     <value>statusBarPanel1</value>
@@ -954,12 +930,6 @@
   <data name="uxFormat.Items1" xml:space="preserve">
     <value>text/html</value>
   </data>
-  <data name="uxFormat.Items2" xml:space="preserve">
-    <value>multipart/alternative</value>
-  </data>
-  <data name="uxFormat.Items3" xml:space="preserve">
-    <value>multipart/mixed</value>
-  </data>
   <data name="uxFormat.Location" type="System.Drawing.Point, System.Drawing">
     <value>312, 28</value>
   </data>
@@ -1429,140 +1399,62 @@
   <data name="toolBarButtonNew.ImageIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="toolBarButtonNew.Name" xml:space="preserve">
-    <value>toolBarButtonNew</value>
-  </data>
-  <data name="toolBarButtonNew.Tag" xml:space="preserve">
-    <value>New</value>
-  </data>
   <data name="toolBarButtonNew.ToolTipText" xml:space="preserve">
-    <value>New</value>
+    <value>New profile</value>
   </data>
   <data name="toolBarButtonOpen.ImageIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="toolBarButtonOpen.Name" xml:space="preserve">
-    <value>toolBarButtonOpen</value>
-  </data>
-  <data name="toolBarButtonOpen.Tag" xml:space="preserve">
-    <value>Open</value>
-  </data>
   <data name="toolBarButtonOpen.ToolTipText" xml:space="preserve">
-    <value>Open</value>
+    <value>Open existing profile</value>
   </data>
   <data name="toolBarButtonSave.ImageIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="toolBarButtonSave.Name" xml:space="preserve">
-    <value>toolBarButtonSave</value>
-  </data>
-  <data name="toolBarButtonSave.Tag" xml:space="preserve">
-    <value>Save</value>
-  </data>
   <data name="toolBarButtonSave.ToolTipText" xml:space="preserve">
-    <value>Save</value>
-  </data>
-  <data name="toolBarButtonSplit1.Name" xml:space="preserve">
-    <value>toolBarButtonSplit1</value>
-  </data>
-  <data name="toolBarButtonSplit1.Style" type="System.Windows.Forms.ToolBarButtonStyle, System.Windows.Forms">
-    <value>Separator</value>
+    <value>Save profile</value>
   </data>
   <data name="toolBarButtonAdd.ImageIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="toolBarButtonAdd.Name" xml:space="preserve">
-    <value>toolBarButtonAdd</value>
-  </data>
-  <data name="toolBarButtonAdd.Tag" xml:space="preserve">
-    <value>Add</value>
-  </data>
   <data name="toolBarButtonAdd.ToolTipText" xml:space="preserve">
-    <value>Add</value>
+    <value>Add recipient</value>
   </data>
   <data name="toolBarButtonEdit.ImageIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="toolBarButtonEdit.Name" xml:space="preserve">
-    <value>toolBarButtonEdit</value>
-  </data>
-  <data name="toolBarButtonEdit.Tag" xml:space="preserve">
-    <value>Edit</value>
-  </data>
   <data name="toolBarButtonEdit.ToolTipText" xml:space="preserve">
-    <value>Edit</value>
+    <value>Edit recipient</value>
   </data>
   <data name="toolBarButtonDelete.ImageIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="toolBarButtonDelete.Name" xml:space="preserve">
-    <value>toolBarButtonDelete</value>
-  </data>
-  <data name="toolBarButtonDelete.Tag" xml:space="preserve">
-    <value>Delete</value>
-  </data>
   <data name="toolBarButtonDelete.ToolTipText" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="toolBarButtonSplit2.Name" xml:space="preserve">
-    <value>toolBarButtonSplit2</value>
-  </data>
-  <data name="toolBarButtonSplit2.Style" type="System.Windows.Forms.ToolBarButtonStyle, System.Windows.Forms">
-    <value>Separator</value>
+    <value>Delete recipient</value>
   </data>
   <data name="toolBarButtonStart.ImageIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="toolBarButtonStart.Name" xml:space="preserve">
-    <value>toolBarButtonStart</value>
-  </data>
-  <data name="toolBarButtonStart.Tag" xml:space="preserve">
-    <value>Start</value>
-  </data>
   <data name="toolBarButtonStart.ToolTipText" xml:space="preserve">
-    <value>Start/Continue</value>
+    <value>Start/Continue sending emails</value>
   </data>
   <data name="toolBarButtonPause.ImageIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="toolBarButtonPause.Name" xml:space="preserve">
-    <value>toolBarButtonPause</value>
-  </data>
-  <data name="toolBarButtonPause.Tag" xml:space="preserve">
-    <value>Pause</value>
-  </data>
   <data name="toolBarButtonPause.ToolTipText" xml:space="preserve">
-    <value>Pause</value>
+    <value>Pause sending emails</value>
   </data>
   <data name="toolBarButtonStop.ImageIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="toolBarButtonStop.Name" xml:space="preserve">
-    <value>toolBarButtonStop</value>
-  </data>
-  <data name="toolBarButtonStop.Tag" xml:space="preserve">
-    <value>Stop</value>
-  </data>
   <data name="toolBarButtonStop.ToolTipText" xml:space="preserve">
-    <value>Stop</value>
-  </data>
-  <data name="toolBarButtonSplit3.Name" xml:space="preserve">
-    <value>toolBarButtonSplit3</value>
-  </data>
-  <data name="toolBarButtonSplit3.Style" type="System.Windows.Forms.ToolBarButtonStyle, System.Windows.Forms">
-    <value>Separator</value>
+    <value>Stop sending emails</value>
   </data>
   <data name="toolBarButtonOption.ImageIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="toolBarButtonOption.Name" xml:space="preserve">
-    <value>toolBarButtonOption</value>
-  </data>
-  <data name="toolBarButtonOption.Tag" xml:space="preserve">
-    <value>Option</value>
-  </data>
   <data name="toolBarButtonOption.ToolTipText" xml:space="preserve">
-    <value>Option</value>
+    <value>Application option</value>
   </data>
   <data name="toolBar1.ButtonSize" type="System.Drawing.Size, System.Drawing">
     <value>39, 36</value>

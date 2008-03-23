@@ -5,6 +5,7 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.Runtime.InteropServices;
 using System.Net;
+using System.Net.NetworkInformation;
 
 namespace EmailSender
 {
@@ -15,58 +16,21 @@ namespace EmailSender
 	{
 		private string hostName;
 		private string domainName;
-		private IPAddress[] dnsServers;
+        private IPAddressCollection dnsServers;
 
-		public IPConfig()
-		{
-			GetParms();
-		}
+        public IPConfig()
+        {
+            NetworkInterface[] nics = NetworkInterface.GetAllNetworkInterfaces();
+            foreach (NetworkInterface ni in nics)
+            {
+                if ((ni.OperationalStatus == OperationalStatus.Up) && (ni.NetworkInterfaceType!=NetworkInterfaceType.Loopback))
+                {
+                    dnsServers = ni.GetIPProperties().DnsAddresses;
+                }
+            }
 
-		private void GetParms()
-		{
-			uint uintBufferSize = 0;
-			ArrayList dnsIPList = new ArrayList();
-			IPAddress dnsIP;
-			Native.IP_ADDR_STRING DNSIP;
-
-			//run the method once to find the size of the buffer required
-			if( Native.GetNetworkParams(IntPtr.Zero , ref uintBufferSize) != 111 )
-				throw new ApplicationException("Error calling GetNetworkParams().");
-
-			//declare a space in unmanaged memory to hold the data
-			IntPtr pBuffer = Marshal.AllocHGlobal((int)uintBufferSize);
-
-			//run the function
-			if( Native.GetNetworkParams( pBuffer, ref uintBufferSize ) !=0 )
-				throw new ApplicationException("Error getting adapter info.");
-
-			Native.FIXED_INFO FInfo =
-				(Native.FIXED_INFO)Marshal.PtrToStructure(pBuffer,
-				typeof(Native.FIXED_INFO));
-			this.hostName = FInfo.HostName;
-			this.domainName = FInfo.DomainName;
-
-			//Get DNS Server IPs:
-			DNSIP = FInfo.DnsServerList;
-
-			dnsIP = GetIP(DNSIP.IpAddress.AddrString);
-			if ( dnsIP != null )
-				dnsIPList.Add(dnsIP);
-
-			while( DNSIP.Next != IntPtr.Zero)
-			{
-				DNSIP = (Native.IP_ADDR_STRING)Marshal.PtrToStructure(DNSIP.Next,
-					typeof(Native.IP_ADDR_STRING));
-				dnsIP = GetIP(DNSIP.IpAddress.AddrString);
-				if ( dnsIP != null )
-					dnsIPList.Add(dnsIP);
-				else
-					break;
-			}
-
-			this.dnsServers = (IPAddress[])dnsIPList.ToArray(typeof(IPAddress));
-			Marshal.FreeHGlobal(pBuffer);
-		}
+        }
+		
 
 		private IPAddress GetIP(string ipString)
 		{
@@ -93,7 +57,7 @@ namespace EmailSender
 			get { return this.domainName; }
 		}
 
-		public IPAddress[] DnsServers
+        public IPAddressCollection DnsServers
 		{
 			get { return this.dnsServers; }
 		}

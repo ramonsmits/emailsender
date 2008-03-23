@@ -21,18 +21,18 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_9EE1342C3A06185B28B12CE5FDA0C0E7"
+        "OwnerKey" = "8:_A5FF59CC72E64C2F8D51BC7FB5F1108B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_A5FF59CC72E64C2F8D51BC7FB5F1108B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_E5919CD4ABD6010E11893CF4EE7A5FBD"
-        "OwnerKey" = "8:_A5FF59CC72E64C2F8D51BC7FB5F1108B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_A5FF59CC72E64C2F8D51BC7FB5F1108B"
         "MsmSig" = "8:_UNDEFINED"
@@ -40,7 +40,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_E5919CD4ABD6010E11893CF4EE7A5FBD"
+        "OwnerKey" = "8:_9EE1342C3A06185B28B12CE5FDA0C0E7"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -149,14 +149,14 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E5919CD4ABD6010E11893CF4EE7A5FBD"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_9EE1342C3A06185B28B12CE5FDA0C0E7"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:LumiSoft.Net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_E5919CD4ABD6010E11893CF4EE7A5FBD"
+                    "_9EE1342C3A06185B28B12CE5FDA0C0E7"
                     {
                     "Name" = "8:LumiSoft.Net.dll"
                     "Attributes" = "3:512"
@@ -241,25 +241,26 @@
         "MsiBootstrapper"
         {
         "LangId" = "3:0"
+        "RequiresElevation" = "11:FALSE"
         }
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:EmailSender"
-        "ProductCode" = "8:{556FD341-F0AF-4B8E-A946-02C7F1110E8C}"
-        "PackageCode" = "8:{87C5628C-F8DB-48C5-8A9A-CE9EF6856AF6}"
+        "ProductCode" = "8:{936D62A9-BB89-446F-9EA4-34563D90006C}"
+        "PackageCode" = "8:{13175D8E-3178-40A8-937A-B0AA4E909389}"
         "UpgradeCode" = "8:{D99FD770-2D2E-4CD6-84D1-DAF2F3B4D70B}"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
-        "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.2.0"
-        "Manufacturer" = "8:faena.com"
+        "InstallAllUsers" = "11:TRUE"
+        "ProductVersion" = "8:1.2.1"
+        "Manufacturer" = "8:emailsender.sourceforge.net"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:emailsender.sourceforge.net"
         "Title" = "8:EmailSender"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:Vincent Magiya"
+        "ARPCONTACT" = "8:Someone"
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:emailsender.sourceforge.net"

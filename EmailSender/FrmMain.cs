@@ -1,7 +1,6 @@
 ﻿//////////////////////////////////////////////////////////////////////
 /////
-/////  An open source project developped by me
-/////  Copyright (C) 2005  Vincent Magiya
+/////  An open source project developped by someone
 /////
 /////  This program is free software; you can redistribute it and/or modify
 /////  it under the terms of the GNU General Public License as published by
@@ -15,6 +14,10 @@
 /////  You should have received a copy of the GNU General Public License
 /////  along with this program; if not, write to the Free Software
 /////  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+/////
+/////  Change Log:
+/////  2005-xx-xx VM Created
+/////  2008-03-22 VM Cleanup the code
 /////
 /////////////////////////////////////////////////////////////////////////
 using System;
@@ -820,26 +823,34 @@ namespace EmailSender
             // 
             // statusBarPanelMsg
             // 
+            this.statusBarPanelMsg.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring;
+            this.statusBarPanelMsg.BorderStyle = System.Windows.Forms.StatusBarPanelBorderStyle.None;
             resources.ApplyResources(this.statusBarPanelMsg, "statusBarPanelMsg");
             // 
             // statusBarPanelStatus
             // 
+            this.statusBarPanelStatus.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
             resources.ApplyResources(this.statusBarPanelStatus, "statusBarPanelStatus");
             // 
             // statusBarPanelSuccess
             // 
+            this.statusBarPanelSuccess.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
             resources.ApplyResources(this.statusBarPanelSuccess, "statusBarPanelSuccess");
             // 
             // statusBarPanelFail
             // 
+            this.statusBarPanelFail.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
             resources.ApplyResources(this.statusBarPanelFail, "statusBarPanelFail");
             // 
             // statusBarPanelTotal
             // 
+            this.statusBarPanelTotal.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
             resources.ApplyResources(this.statusBarPanelTotal, "statusBarPanelTotal");
             // 
             // statusBarPanel1
             // 
+            this.statusBarPanel1.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
+            this.statusBarPanel1.BorderStyle = System.Windows.Forms.StatusBarPanelBorderStyle.None;
             resources.ApplyResources(this.statusBarPanel1, "statusBarPanel1");
             // 
             // tabControlMain
@@ -875,11 +886,11 @@ namespace EmailSender
             this.listViewAddress.SmallImageList = this.imageList2;
             this.listViewAddress.UseCompatibleStateImageBehavior = false;
             this.listViewAddress.View = System.Windows.Forms.View.Details;
-            this.listViewAddress.DoubleClick += new System.EventHandler(this.listViewAddress_DoubleClick);
             this.listViewAddress.SelectedIndexChanged += new System.EventHandler(this.listViewAddress_SelectedIndexChanged);
+            this.listViewAddress.DoubleClick += new System.EventHandler(this.listViewAddress_DoubleClick);
             this.listViewAddress.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.listViewAddress_ItemCheck);
-            this.listViewAddress.KeyDown += new System.Windows.Forms.KeyEventHandler(this.listViewAddress_KeyDown);
             this.listViewAddress.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listViewAddress_ColumnClick);
+            this.listViewAddress.KeyDown += new System.Windows.Forms.KeyEventHandler(this.listViewAddress_KeyDown);
             // 
             // columnHeader3
             // 
@@ -1043,9 +1054,7 @@ namespace EmailSender
             resources.ApplyResources(this.uxFormat, "uxFormat");
             this.uxFormat.Items.AddRange(new object[] {
             resources.GetString("uxFormat.Items"),
-            resources.GetString("uxFormat.Items1"),
-            resources.GetString("uxFormat.Items2"),
-            resources.GetString("uxFormat.Items3")});
+            resources.GetString("uxFormat.Items1")});
             this.uxFormat.Name = "uxFormat";
             // 
             // comboBox3
@@ -1225,54 +1234,77 @@ namespace EmailSender
             // toolBarButtonNew
             // 
             resources.ApplyResources(this.toolBarButtonNew, "toolBarButtonNew");
+            this.toolBarButtonNew.Name = "toolBarButtonNew";
+            this.toolBarButtonNew.Tag = "New";
             // 
             // toolBarButtonOpen
             // 
             resources.ApplyResources(this.toolBarButtonOpen, "toolBarButtonOpen");
+            this.toolBarButtonOpen.Name = "toolBarButtonOpen";
+            this.toolBarButtonOpen.Tag = "Open";
             // 
             // toolBarButtonSave
             // 
             resources.ApplyResources(this.toolBarButtonSave, "toolBarButtonSave");
+            this.toolBarButtonSave.Name = "toolBarButtonSave";
+            this.toolBarButtonSave.Tag = "Save";
             // 
             // toolBarButtonSplit1
             // 
-            resources.ApplyResources(this.toolBarButtonSplit1, "toolBarButtonSplit1");
+            this.toolBarButtonSplit1.Name = "toolBarButtonSplit1";
+            this.toolBarButtonSplit1.Style = System.Windows.Forms.ToolBarButtonStyle.Separator;
             // 
             // toolBarButtonAdd
             // 
             resources.ApplyResources(this.toolBarButtonAdd, "toolBarButtonAdd");
+            this.toolBarButtonAdd.Name = "toolBarButtonAdd";
+            this.toolBarButtonAdd.Tag = "Add";
             // 
             // toolBarButtonEdit
             // 
             resources.ApplyResources(this.toolBarButtonEdit, "toolBarButtonEdit");
+            this.toolBarButtonEdit.Name = "toolBarButtonEdit";
+            this.toolBarButtonEdit.Tag = "Edit";
             // 
             // toolBarButtonDelete
             // 
             resources.ApplyResources(this.toolBarButtonDelete, "toolBarButtonDelete");
+            this.toolBarButtonDelete.Name = "toolBarButtonDelete";
+            this.toolBarButtonDelete.Tag = "Delete";
             // 
             // toolBarButtonSplit2
             // 
-            resources.ApplyResources(this.toolBarButtonSplit2, "toolBarButtonSplit2");
+            this.toolBarButtonSplit2.Name = "toolBarButtonSplit2";
+            this.toolBarButtonSplit2.Style = System.Windows.Forms.ToolBarButtonStyle.Separator;
             // 
             // toolBarButtonStart
             // 
             resources.ApplyResources(this.toolBarButtonStart, "toolBarButtonStart");
+            this.toolBarButtonStart.Name = "toolBarButtonStart";
+            this.toolBarButtonStart.Tag = "Start";
             // 
             // toolBarButtonPause
             // 
             resources.ApplyResources(this.toolBarButtonPause, "toolBarButtonPause");
+            this.toolBarButtonPause.Name = "toolBarButtonPause";
+            this.toolBarButtonPause.Tag = "Pause";
             // 
             // toolBarButtonStop
             // 
             resources.ApplyResources(this.toolBarButtonStop, "toolBarButtonStop");
+            this.toolBarButtonStop.Name = "toolBarButtonStop";
+            this.toolBarButtonStop.Tag = "Stop";
             // 
             // toolBarButtonSplit3
             // 
-            resources.ApplyResources(this.toolBarButtonSplit3, "toolBarButtonSplit3");
+            this.toolBarButtonSplit3.Name = "toolBarButtonSplit3";
+            this.toolBarButtonSplit3.Style = System.Windows.Forms.ToolBarButtonStyle.Separator;
             // 
             // toolBarButtonOption
             // 
             resources.ApplyResources(this.toolBarButtonOption, "toolBarButtonOption");
+            this.toolBarButtonOption.Name = "toolBarButtonOption";
+            this.toolBarButtonOption.Tag = "Option";
             // 
             // imlToolbar
             // 
@@ -1317,8 +1349,8 @@ namespace EmailSender
             this.KeyPreview = true;
             this.Menu = this.mainMenu1;
             this.Name = "Form1";
-            this.Closing += new System.ComponentModel.CancelEventHandler(this.Form1_Closing);
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Closing += new System.ComponentModel.CancelEventHandler(this.Form1_Closing);
             ((System.ComponentModel.ISupportInitialize)(this.statusBarPanelMsg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusBarPanelStatus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusBarPanelSuccess)).EndInit();
@@ -1392,12 +1424,12 @@ namespace EmailSender
 			Application.Run(new Form1());
 		}
 		private int nIndex = 0;
-		bool _ifModified;
-		string _fileTitle = "";
-		string mOldFormTitle = "";
-		string m_fileName = "";
-		ClassSettings mySetting;
-        SMTP_Client client;
+		private bool _ifModified;
+		private string _fileTitle = "";
+		private string _oldFormTitle = "";
+		private string _previewFileName = "";
+		private ClassSettings _appOptions;
+        private SMTP_Client _smtpClient;
 		private int _cntActive = 0;
 		private int _cntQueued = 0;
 		int m_Total = 0;
@@ -1413,15 +1445,17 @@ namespace EmailSender
 		private void Form1_Load(object sender, System.EventArgs e)
 		{
 			LoadSettings();
-			mOldFormTitle = this.Text;
+			_oldFormTitle = this.Text;
 			mnuFileNew.PerformClick(); //menu New
-            client = new SMTP_Client(listViewAddress);
-            client.CompletedAll += new System.EventHandler(this.SendMailCompletedAll);
-			client.SendJobCompleted += new SMTP_SendJob_EventHandler(SendMailSendJobCompleted);
-			client.PartOfMessageIsSent += new SMTP_PartOfMessage_EventHandler(SendMailPartOfMessageIsSent);
-			client.Error += new SMTP_Error_EventHandler(SendMailError);
-			client.NewSendJob += new SMTP_SendJob_EventHandler(SendMailNewSendJob);
-			client.SessionLog += new LogEventHandler(SendMailSessionLog);
+            //2008-03-22 VM Set UI owner to "this".
+            //client = new SMTP_Client(listViewAddress);
+            _smtpClient = new SMTP_Client(this); 
+            _smtpClient.CompletedAll += new System.EventHandler(this.SendMailCompletedAll);
+			_smtpClient.SendJobCompleted += new SMTP_SendJob_EventHandler(SendMailSendJobCompleted);
+			_smtpClient.PartOfMessageIsSent += new SMTP_PartOfMessage_EventHandler(SendMailPartOfMessageIsSent);
+			_smtpClient.Error += new SMTP_Error_EventHandler(SendMailError);
+			_smtpClient.NewSendJob += new SMTP_SendJob_EventHandler(SendMailNewSendJob);
+			_smtpClient.SessionLog += new LogEventHandler(SendMailSessionLog);
 			
 			imageList2.ImageSize = new Size(12,12);
 			imageList2.Images.Add (new Bitmap(typeof(Form1), "Image.perlblack12x12.gif"));
@@ -1501,7 +1535,7 @@ namespace EmailSender
 			}
 			else
 			{
-				if (mySetting._ifReplaceDup)
+				if (_appOptions._ifReplaceDup)
 				{
 					int pos = (int) _ht[email];
 					lvItm = listViewAddress.Items[pos];
@@ -1512,9 +1546,9 @@ namespace EmailSender
 					lvItm.SubItems[5].Text = "";
 					ok = true;
 				}
-				if (mySetting._ifNoImportDup)
+				if (_appOptions._ifNoImportDup)
 					ok = false;
-				if (mySetting._ifCreateDup)
+				if (_appOptions._ifCreateDup)
 					add = true;
 			}
 										
@@ -1771,7 +1805,7 @@ namespace EmailSender
 								break;
 						}					
 					}
-					MessageBox.Show(cnt + " record(s) imported.", mOldFormTitle, MessageBoxButtons.OK, MessageBoxIcon.Information);
+					MessageBox.Show(cnt + " record(s) imported.", _oldFormTitle, MessageBoxButtons.OK, MessageBoxIcon.Information);
 				}
 				catch (Exception ex)
 				{
@@ -2042,7 +2076,7 @@ namespace EmailSender
 						default:
 							break;
 					}					
-					MessageBox.Show(cnt + " record(s) exported.", mOldFormTitle, MessageBoxButtons.OK, MessageBoxIcon.Information);
+					MessageBox.Show(cnt + " record(s) exported.", _oldFormTitle, MessageBoxButtons.OK, MessageBoxIcon.Information);
 				}
 				catch (Exception ex)
 				{
@@ -2122,7 +2156,7 @@ namespace EmailSender
 			if (listViewAddress.SelectedItems.Count > 0 ) 
 			{
 				DialogResult result;
-				result = MessageBox.Show ("This will remove selected " + listViewAddress.SelectedItems.Count.ToString() + " item(s). Do you want to continue?", mOldFormTitle, MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+				result = MessageBox.Show ("This will remove selected " + listViewAddress.SelectedItems.Count.ToString() + " item(s). Do you want to continue?", _oldFormTitle, MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
 				if(result == DialogResult.Yes)
 				{
 					foreach (ListViewItem itm in listViewAddress.SelectedItems)
@@ -2224,15 +2258,15 @@ namespace EmailSender
 				// Deserialization
 				XmlSerializer s = new XmlSerializer( typeof( ClassSettings ) );
 				TextReader r = new StreamReader( fn );
-				mySetting = (ClassSettings)s.Deserialize( new System.Xml.XmlTextReader(r) );
+				_appOptions = (ClassSettings)s.Deserialize( new System.Xml.XmlTextReader(r) );
 				r.Close();
 			}
 			else
 			{
-				mySetting = new ClassSettings();
+				_appOptions = new ClassSettings();
 			}
-			tmrSaveFile.Interval = mySetting._autoSaveInterval * 1000;
-			tmrSaveFile.Enabled = mySetting._ifAutoSave;
+			tmrSaveFile.Interval = _appOptions._autoSaveInterval * 1000;
+			tmrSaveFile.Enabled = _appOptions._ifAutoSave;
 		}
 
 		/// <summary>
@@ -2275,10 +2309,10 @@ namespace EmailSender
             }
             else
             {
-            ListViewItem itm = listView1.Items[pIndex];
+            ListViewItem itm = this.listViewAddress.Items[pIndex];
 			itm.SubItems[3].Text = pErrorText;
 			itm.ImageIndex = 6;
-			if(!mySetting._ifRetryFail) itm.Checked = false;
+			if(!_appOptions._ifRetryFail) itm.Checked = false;
 			m_cntFail++;
 			DispStatus();
             }
@@ -2291,7 +2325,7 @@ namespace EmailSender
                 this.Invoke(new SendViaMapiDelegate(SendViaMapi), new object[] { pAdr });
             else
             {
-                ListViewItem itm = listView1.Items[pAdr.Index];
+                ListViewItem itm = this.listViewAddress.Items[pAdr.Index];
                 itm.SubItems[5].Text = "MAPI";
                 Mapi ma = new Mapi();
                 
@@ -2329,27 +2363,32 @@ namespace EmailSender
 		}
 		private void SendViaMapiComplete()
 		{
-			Log("All done.");
-			statusBarPanelMsg.Text = "Send mail completed"; 
+            if (InvokeRequired)
+                Invoke(new MethodInvoker(SendViaMapiComplete));
+            else
+            {
+                Log("All done.");
+                statusBarPanelMsg.Text = "Send mail completed";
 
-			SetBusy(false);
+                SetBusy(false);
 
-			//retry failed addresses
-			if(mySetting._ifRetryFail)
-			{
-				int cnt=0;
-				foreach(ListViewItem itm in listViewAddress.Items)
-				{
-					if(itm.Checked) cnt++;
-				}
-				if(cnt>0)
-				{
-					Log("Retry for failed address(es) in " + mySetting._retryFail.ToString() + " second(s)...");
-					tmrFailRetry.Interval = mySetting._retryFail * 1000;
-					tmrFailRetry.Start();
-					SetBusy(true);
-				}
-			}
+                //retry failed addresses
+                if (_appOptions._ifRetryFail)
+                {
+                    int cnt = 0;
+                    foreach (ListViewItem itm in listViewAddress.Items)
+                    {
+                        if (itm.Checked) cnt++;
+                    }
+                    if (cnt > 0)
+                    {
+                        Log("Retry for failed address(es) in " + _appOptions._retryFail.ToString() + " second(s)...");
+                        tmrFailRetry.Interval = _appOptions._retryFail * 1000;
+                        tmrFailRetry.Start();
+                        SetBusy(true);
+                    }
+                }
+            }
 		}
 		
 		private bool FindInAry(ArrayList pAry, string pFind)
@@ -2373,23 +2412,23 @@ namespace EmailSender
 		}
 		private bool CheckAddress(Address itm)
 		{
-			if (FindInAry(mySetting.emailBlackList, itm.Email))
+			if (FindInAry(_appOptions.emailBlackList, itm.Email))
 			{
 				//found
 				SendMailFail(itm.Index,"email is blocked");
 				return false;
 			}
-			if (FindInAry(mySetting.nameBlackList, NamePart(itm.Email)))
+			if (FindInAry(_appOptions.nameBlackList, NamePart(itm.Email)))
 			{
 				SendMailFail(itm.Index,"name is blocked");
 				return false;
 			}
-			if (FindInAry(mySetting.noSendList,itm.Email))
+			if (FindInAry(_appOptions.noSendList,itm.Email))
 			{
 				SendMailFail(itm.Index,"email is in No-Send list");
 				return false;
 			}
-			if (FindDomainInAry(mySetting.domainBlackList,DomainPart(itm.Email)))
+			if (FindDomainInAry(_appOptions.domainBlackList,DomainPart(itm.Email)))
 			{
 				SendMailFail(itm.Index,"Domain is blocked");
 				return false;
@@ -2436,6 +2475,8 @@ namespace EmailSender
                 m.From = from;
                 m.Subject = ParseMsg(txtSubject.Text, pAdr);
                 m.Body = ParseMsg(txtBody.Text, pAdr);
+                if (this.uxFormat.Text == "text/html")
+                    m.BodyHtml = m.Body;
                 foreach (ListViewItem it in listView1.Items)
                 {
                     if (File.Exists(it.Text))
@@ -2444,17 +2485,18 @@ namespace EmailSender
                 //-------------------------------------------------------//
 
                 //--- Send message ------------------------------------------//
-                client.DnsServers = (string[])mySetting.DNS.ToArray(typeof(string)); //new string[]{m_pDnsServer.Text};
-                client.UseSmartHost = false;
-                client.Username = "";
-                client.Password = "";
-                client.MaxSenderThreads = mySetting._maxThreads;
+                _smtpClient.DnsServers = (string[])_appOptions.DNS.ToArray(typeof(string)); //new string[]{m_pDnsServer.Text};
+                _smtpClient.UseSmartHost = false;
+                _smtpClient.Username = "";
+                _smtpClient.Password = "";
+                _smtpClient.MaxSenderThreads = _appOptions._maxThreads;
                 ShowItemCarrier(pAdr.Index,"Direct");
-                client.BeginSend(new string[] { to }, txtFromEmail.Text, m.ConstructBinaryMime(), pAdr.Index.ToString());
-                while (_cntActive >= mySetting._maxThreads)
-                {
-                    Thread.Sleep(100);
-                }
+                _smtpClient.BeginSend(new string[] { to }, txtFromEmail.Text, m.ConstructBinaryMime(), pAdr.Index.ToString());
+                //2008-03-22 VM Free UI thread. Cannot do this here. Move outside this thread.
+                //while (_cntActive >= mySetting._maxThreads)
+                //{
+                //    Thread.Sleep(1000); //2008-03-22 VM Increased time interval from 100ms to 1s
+                //}
             }
 		}
 
@@ -2500,6 +2542,8 @@ namespace EmailSender
                 m.From = from;
                 m.Subject = ParseMsg(txtSubject.Text, pAdr, svr);
                 m.Body = ParseMsg(txtBody.Text, pAdr, svr);
+                if (this.uxFormat.Text == "text/html")
+                    m.BodyHtml = m.Body;
                 foreach (ListViewItem it in listView1.Items)
                 {
                     if (File.Exists(it.Text))
@@ -2508,27 +2552,28 @@ namespace EmailSender
                 //-------------------------------------------------------//
 
                 //--- Send message ------------------------------------------//
-                client.SmartHost = svr.Host;
-                client.UseSmartHost = true;
-                client.Port = svr.Port;
+                _smtpClient.SmartHost = svr.Host;
+                _smtpClient.UseSmartHost = true;
+                _smtpClient.Port = svr.Port;
                 if (svr.IfAuth)
                 {
-                    client.Username = svr.UserID;
-                    client.Password = svr.Password;
+                    _smtpClient.Username = svr.UserID;
+                    _smtpClient.Password = svr.Password;
                 }
                 else
                 {
-                    client.Username = "";
-                    client.Password = "";
+                    _smtpClient.Username = "";
+                    _smtpClient.Password = "";
                 }
                 ShowItemCarrier(pAdr.Index, "SMTP:" + svr.HostID.ToString());
 
-                client.MaxSenderThreads = mySetting._maxThreads;
-                client.BeginSend(new string[] { to }, fromEmail, m.ConstructBinaryMime(), pAdr.Index.ToString());
-                while (_cntActive >= mySetting._maxThreads)
-                {
-                    Thread.Sleep(100);
-                }
+                _smtpClient.MaxSenderThreads = _appOptions._maxThreads;
+                _smtpClient.BeginSend(new string[] { to }, fromEmail, m.ConstructBinaryMime(), pAdr.Index.ToString());
+                //2008-03-22 VM Free up UI thread
+                //while (_cntActive >= mySetting._maxThreads)
+                //{
+                //    Thread.Sleep(100);
+                //}
             }
 		}
 
@@ -2539,7 +2584,7 @@ namespace EmailSender
                 this.Invoke(new ShowItemCarrierDelegate(ShowItemCarrier), new object[] { pIndex, pText });
             else
             {
-                ListViewItem itm = listView1.Items[pIndex];
+                ListViewItem itm = this.listViewAddress.Items[pIndex]; //2008-03-22 VM Change listView1 to listViewAddress
                 itm.SubItems[5].Text = pText;
             }
         }
@@ -2553,7 +2598,7 @@ namespace EmailSender
 		
 		private void CheckDuplicate()
 		{
-			if (mySetting._chkDuplicate)
+			if (_appOptions._chkDuplicate)
 			{
                 Dictionary<string, string> ht = new Dictionary<string, string>();// Hashtable(new CaseInsensitiveHashCodeProvider(), new CaseInsensitiveComparer());
 			
@@ -2590,7 +2635,7 @@ namespace EmailSender
 			else
 			{
 				//if (!validator1.ValidateAll()) return;
-				if (client.IsSending)
+				if (_smtpClient.IsSending)
 				{
 					Log("Please wait for last send job finishes before starting a new one!");
 					return;
@@ -2610,7 +2655,7 @@ namespace EmailSender
 				if (_cntQueued==0)
 				{
 					Log("No checked address to send.");
-					statusBarPanelMsg.Text = "Nothing to send"; 
+					statusBarPanelMsg.Text = "Nothing to send!"; 
 					return;
 				}
 				m_Total = _cntQueued;
@@ -2634,7 +2679,9 @@ namespace EmailSender
                 this.Invoke(new ShowItemStatusDelegate(ShowItemStatus), new object[] { pIndex, pImageIndex, pText });
             else
             {
-                ListViewItem itm = listView1.Items[pIndex];
+                //2008-03-22 VM It is listViewAddress, not listView1
+                //ListViewItem itm = listView1.Items[pIndex];
+                ListViewItem itm = listViewAddress.Items[pIndex];
                 itm.ImageIndex = 1;
                 itm.SubItems[3].Text = pText;
             }
@@ -2657,12 +2704,12 @@ namespace EmailSender
                             Stopped();
                             return;
                         }
-                        if (mySetting._ifLimitPerConn)
+                        if (_appOptions._ifLimitPerConn)
                         {
-                            if (cnt >= mySetting._limitPerConn)
+                            if (cnt >= _appOptions._limitPerConn)
                             {
-                                Log("Max emails per connection reaches. Delaying " + mySetting._perConnDelay + " second(s)...");
-                                int delay = mySetting._perConnDelay * 1000;
+                                Log("Max emails per connection reaches. Delaying " + _appOptions._perConnDelay + " second(s)...");
+                                int delay = _appOptions._perConnDelay * 1000;
                                 Thread.Sleep(delay);
                                 cnt = 0;
                             }
@@ -2685,27 +2732,27 @@ namespace EmailSender
                         };
                         ShowItemStatus(adr.Index, 1, "Start sending");
                         _cntActive++;
-                        if (mySetting._ifSendviaMAPI)
+                        if (_appOptions._ifSendviaMAPI)
                         {
                             SendViaMapi(adr);
                         }
-                        else if (mySetting._ifSMTP)
+                        else if (_appOptions._ifSMTP)
                         {
-                            SMTPServer svr = mySetting.SMTPServers[indxSvr];
-                            int limit = mySetting._ifLimitPerConn ? mySetting._limitPerConn : 65520;
+                            SMTPServer svr = _appOptions.SMTPServers[indxSvr];
+                            int limit = _appOptions._ifLimitPerConn ? _appOptions._limitPerConn : 65520;
                             limit = svr.IfLimit ? svr.NrPerSession : limit;
                             if ((!svr.Enabled) || (cntMsgPerSvr >= limit))
                             {
                                 cntMsgPerSvr = 0;
                                 bool found = false;
                                 int i;
-                                for (i = indxSvr + 1; i < mySetting.SMTPServerCount(); i++)
+                                for (i = indxSvr + 1; i < _appOptions.SMTPServerCount(); i++)
                                 {
-                                    if (mySetting.SMTPServers[i].Enabled)
+                                    if (_appOptions.SMTPServers[i].Enabled)
                                     {
-                                        if (mySetting.SMTPServers[i].IfLimit)
+                                        if (_appOptions.SMTPServers[i].IfLimit)
                                         {
-                                            if (mySetting.SMTPServers[i].NrPerSession > 0)
+                                            if (_appOptions.SMTPServers[i].NrPerSession > 0)
                                             {
                                                 found = true;
                                                 break;
@@ -2721,17 +2768,17 @@ namespace EmailSender
                                 if (found)
                                 {
                                     indxSvr = i;
-                                    svr = mySetting.SMTPServers[i];
+                                    svr = _appOptions.SMTPServers[i];
                                 }
                                 else
                                 {
                                     for (i = 0; i <= indxSvr; i++)
                                     {
-                                        if (mySetting.SMTPServers[i].Enabled)
+                                        if (_appOptions.SMTPServers[i].Enabled)
                                         {
-                                            if (mySetting.SMTPServers[i].IfLimit)
+                                            if (_appOptions.SMTPServers[i].IfLimit)
                                             {
-                                                if (mySetting.SMTPServers[i].NrPerSession > 0)
+                                                if (_appOptions.SMTPServers[i].NrPerSession > 0)
                                                 {
                                                     found = true;
                                                     break;
@@ -2747,7 +2794,7 @@ namespace EmailSender
                                     if (found)
                                     {
                                         indxSvr = i;
-                                        svr = mySetting.SMTPServers[i];
+                                        svr = _appOptions.SMTPServers[i];
                                     }
                                     else
                                     {
@@ -2763,10 +2810,19 @@ namespace EmailSender
                         {
                             SendViaDirect(adr);
                         }
+
+                        //2008-03-22 VM Wait for current active threads drop below _maxThreads setting.
+                        if (_appOptions._ifSMTP || _appOptions._ifSendDirect)
+                        {
+                            while (_cntActive >= _appOptions._maxThreads)
+                            {
+                                Thread.Sleep(100);
+                            }
+                        }
                     }
                 }
             }
-            if (mySetting._ifSendviaMAPI)
+            if (_appOptions._ifSendviaMAPI)
                 SendViaMapiComplete();
         }
 
@@ -3095,11 +3151,11 @@ namespace EmailSender
 					s = txtBody.Text;
 				}
 				s = ParseMsg(s, null);
-				m_fileName = Path.GetTempFileName() + ".htm";
-				StreamWriter sw = new StreamWriter(m_fileName);
+				_previewFileName = Path.GetTempFileName() + ".htm";
+				StreamWriter sw = new StreamWriter(_previewFileName);
 				sw.Write(s);
 				sw.Close();
-				webBrowser1.Navigate(m_fileName);
+				webBrowser1.Navigate(_previewFileName);
 			}
 		}
 
@@ -3129,52 +3185,59 @@ namespace EmailSender
 					title = _fileTitle;
 				if (value)
 				{
-					this.Text = mOldFormTitle + " - " + title + "*";
+					this.Text = _oldFormTitle + " - " + title + "*";
 				}
 				else
 				{
-					this.Text = mOldFormTitle + " - " + title;
+					this.Text = _oldFormTitle + " - " + title;
 				}
 				_ifModified = value;
 			}
 		}
 
-		private void SendMailCompletedAll(object sender, System.EventArgs e)
-		{
-			Log("SendMail job remain: " + _cntQueued.ToString());
-			if ((!client.IsSending) && (_cntActive == 0) && ( _cntQueued == 0))
-			{
-				while(m_paused){
-					if (m_stop)
-					{
-						Stopped();
-						return;
-					}
-					Thread.Sleep(100);
-				};
-				Log("All done.");
-				statusBarPanelMsg.Text = "Send mail completed"; 
+        private delegate void SendMailCompletedAllDelegate(object sender, System.EventArgs e);
+        private void SendMailCompletedAll(object sender, System.EventArgs e)
+        {
+            if (InvokeRequired)
+                Invoke(new SendMailCompletedAllDelegate(SendMailCompletedAll), new object[] { sender, e });
+            else
+            {
+                Log("SendMail job remain: " + _cntQueued.ToString());
+                if ((!_smtpClient.IsSending) && (_cntActive == 0) && (_cntQueued == 0))
+                {
+                    while (m_paused)
+                    {
+                        if (m_stop)
+                        {
+                            Stopped();
+                            return;
+                        }
+                        Thread.Sleep(100);
+                    };
+                    Log("All done.");
+                    statusBarPanelMsg.Text = "Send mail completed";
 
-				SetBusy(false);
+                    SetBusy(false);
 
-				//retry failed addresses
-				if(mySetting._ifRetryFail)
-				{
-					int cnt=0;
-					foreach(ListViewItem itm in listViewAddress.Items)
-					{
-						if(itm.Checked) cnt++;
-					}
-					if(cnt>0)
-					{
-						Log("Retry for failed address in " + mySetting._retryFail.ToString() + " second(s)...");
-						tmrFailRetry.Interval = mySetting._retryFail * 1000;
-						tmrFailRetry.Start();
-						SetBusy(true);
-					}
-				}
-			}
-		}
+                    //retry failed addresses
+                    if (_appOptions._ifRetryFail)
+                    {
+                        int cnt = 0;
+                        foreach (ListViewItem itm in listViewAddress.Items)
+                        {
+                            if (itm.Checked) cnt++;
+                        }
+                        if (cnt > 0)
+                        {
+                            Log("Retry for failed address in " + _appOptions._retryFail.ToString() + " second(s)...");
+                            tmrFailRetry.Interval = _appOptions._retryFail * 1000;
+                            tmrFailRetry.Start();
+                            SetBusy(true);
+                        }
+                    }
+                }
+            }
+        }
 
 		private void SendMailSendJobCompleted(object sender, SendJob_EventArgs e)
 		{
@@ -3207,17 +3270,25 @@ namespace EmailSender
 			SendMailFail(itm.Index, e.ErrorText);
 		}
 
-		private void SendMailNewSendJob(object sender, SendJob_EventArgs e)
+        //2008-03-22 VM Use delegate to invoke UI
+        private delegate void SendMailNewSendJobDelegate(object sender, SendJob_EventArgs e);
+
+        private void SendMailNewSendJob(object sender, SendJob_EventArgs e)
 		{
-			string to="";
-			foreach(string t in e.To)
-			{
-				to+= t + ";";
-			}
-			Log("Sending...Job ID:" + e.JobID+ " host:" + e.SmartHost);
-			ListViewItem itm = FindItem(e.JobID);
-			itm.SubItems[3].Text = "Sending...Job ID:" + e.JobID+ " host:" + e.SmartHost;
-			itm.ImageIndex = 1;
+            if (this.InvokeRequired)
+                this.Invoke(new SendMailNewSendJobDelegate(SendMailNewSendJob), new object[] {sender,e});
+            else
+            {
+                string to = "";
+                foreach (string t in e.To)
+                {
+                    to += t + ";";
+                }
+                Log("Sending...Job ID:" + e.JobID + " host:" + e.SmartHost);
+                ListViewItem itm = FindItem(e.JobID);
+                itm.SubItems[3].Text = "Sending...Job ID:" + e.JobID + " host:" + e.SmartHost;
+                itm.ImageIndex = 1;
+            }
 		}
 		
 		private ListViewItem FindItem(string jobID)
@@ -3509,14 +3580,14 @@ namespace EmailSender
 
 		private void menuItem42_Click(object sender, System.EventArgs e)
 		{
-			MessageBox.Show("Not supported in pre-released version");
+			MessageBox.Show("Still not supported in this version.");
 		}
 
         private void webBrowser1_Navigated(object sender, WebBrowserNavigatedEventArgs e)
         {
-            if (File.Exists(m_fileName))
+            if (File.Exists(_previewFileName))
             {
-                File.Delete(m_fileName);
+                File.Delete(_previewFileName);
             }
         }
 

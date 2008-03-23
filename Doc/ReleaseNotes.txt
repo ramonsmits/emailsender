@@ -1,5 +1,5 @@
 EmailSender (Pre-Alpha)
-Copyright (C) 2005,2006 by a man.
+Copyright (C) 2005-2008 by someone.
 Release under GPL
 __________________________________________________________
 
@@ -23,7 +23,7 @@ Able to safely start, pause, continue and stop send mail action.
  
 SYSTEM REQUIREMENTS:
 
- Windows 98/Me/NT4/2000/XP/2003
+ Windows 98/Me/NT4/2000/XP/2003/Vista?
  Microsoft .NET Framework run-time 2.0
     
 

@@ -73,23 +73,22 @@ public class Mapi
 	#region SENDING
 	// ----------------------------------------------------------- SENDING ---------
 
-	public bool Send( string sub, string txt, string format )
-		{
-		lastMsg				= new MapiMessage();
-		lastMsg.subject		= sub;
-		lastMsg.noteText	= txt;
-        lastMsg.messageType = format;
-		// set pointers
-		lastMsg.originator	= AllocOrigin();
-		lastMsg.recips		= AllocRecips(  out lastMsg.recipCount );
-		lastMsg.files		= AllocAttachs( out lastMsg.fileCount  );
+    public bool Send(string sub, string txt, string format)
+    {
+        lastMsg = new MapiMessage();
+        lastMsg.subject = sub;
+        lastMsg.noteText = txt;
+        lastMsg.messageType = ""; // format; //2008-03-22 VM Use format is too easy to be true
+        // set pointers
+        lastMsg.originator = AllocOrigin();
+        lastMsg.recips = AllocRecips(out lastMsg.recipCount);
+        lastMsg.files = AllocAttachs(out lastMsg.fileCount);
 
-		error = MAPISendMail( session, winhandle, lastMsg, 0, 0 );
-		Dealloc();
-		Reset();
-		return error == 0;
-		}
-
+        error = MAPISendMail(session, winhandle, lastMsg, 0, 0);
+        Dealloc();
+        Reset();
+        return error == 0;
+    }
 	public void AddRecip( string name, string addr, bool cc )
 		{
 		MapiRecipDesc dest = new MapiRecipDesc();

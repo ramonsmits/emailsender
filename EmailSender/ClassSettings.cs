@@ -106,12 +106,11 @@ namespace EmailSender
 
 		public ClassSettings()
 		{
-//ToDo: in .NET2.0 ?
-			//			IPConfig ipconfig = new IPConfig();
-//			foreach (IPAddress ip in ipconfig.DnsServers)
-//			{
-//				DNS.Add(ip.ToString());
-//			}
+            IPConfig ipconfig = new IPConfig();
+            foreach (IPAddress ip in ipconfig.DnsServers)
+            {
+                DNS.Add(ip.ToString());
+            }
 //			emailBlackList.Add("webmaster@sohu.com");
 //			emailBlackList.Add("webmaster@21cn.com");
 //			emailBlackList.Add("webmaster@china.com");
