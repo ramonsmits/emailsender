@@ -1,16 +1,16 @@
-EmailSender (Pre-Alpha)
+EmailSender (Development)
 Copyright (C) 2005-2008 by someone.
 Release under GPL
 __________________________________________________________
 
 
 WARNING:
-This is a Pre-Alpha version software. It contains bugs. It most likely will crash sometimes, but usually it will not crash your system. Features may be changed in future releases. 
+This is a development version software. It contains bugs. It most likely will crash sometimes, but usually it will not crash your system. Features may be changed in future releases. 
 This version is not recommended for production use.
 
 BRIEF DESCRIPTION:
 
-EmailSender is a free program for sending e-mails. The program provides safe, easy and fast way for direct mailing. It saves your time (i.e. money) by sending several messages simultaneously. EmailSender is a powerful tool for personalized mass mailing.
+EmailSender is an open-source program for sending e-mails. The program provides easy and efficient way for direct mailing. It saves your time (a.k.a money) by sending several messages simultaneously. EmailSender is a powerful tool for personalized mass mailing.
 
 Many powerful emailing features including:
 Imports/exports addresses from multiple text formats (Vertical text file, comma delimited text file, tab delimited text file, XML file, and email address only text file).

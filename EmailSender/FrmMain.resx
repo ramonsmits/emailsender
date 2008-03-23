@@ -120,6 +120,9 @@
   <metadata name="mainMenu1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="menuItem1.Text" xml:space="preserve">
+    <value>&amp;File</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="mnuFileNew.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
     <value>CtrlN</value>
@@ -154,8 +157,8 @@
   <data name="mnuFileExit.Text" xml:space="preserve">
     <value>E&amp;xit</value>
   </data>
-  <data name="menuItem1.Text" xml:space="preserve">
-    <value>&amp;File</value>
+  <data name="menuItem9.Text" xml:space="preserve">
+    <value>&amp;Recipients</value>
   </data>
   <data name="menuItem12.Text" xml:space="preserve">
     <value>&amp;Add...</value>
@@ -233,8 +236,11 @@
   <data name="menuItem75.Text" xml:space="preserve">
     <value>Find &amp;Next</value>
   </data>
-  <data name="menuItem9.Text" xml:space="preserve">
-    <value>&amp;Recipients</value>
+  <data name="menuItem48.Text" xml:space="preserve">
+    <value>&amp;Compose Email</value>
+  </data>
+  <data name="menuItem49.Text" xml:space="preserve">
+    <value>&amp;Insert Fields</value>
   </data>
   <data name="menuItem59.Text" xml:space="preserve">
     <value>&lt;=Email&gt;</value>
@@ -260,14 +266,11 @@
   <data name="menuItem67.Text" xml:space="preserve">
     <value>&lt;=ReplyEmail&gt;</value>
   </data>
-  <data name="menuItem49.Text" xml:space="preserve">
-    <value>&amp;Insert Fields</value>
-  </data>
   <data name="mnuLoadFileText.Text" xml:space="preserve">
     <value>Load &amp;File As Body Text...</value>
   </data>
-  <data name="menuItem48.Text" xml:space="preserve">
-    <value>&amp;Compose Email</value>
+  <data name="menuItem27.Text" xml:space="preserve">
+    <value>&amp;View</value>
   </data>
   <data name="menuItem28.Text" xml:space="preserve">
     <value>&amp;Recipients</value>
@@ -287,8 +290,8 @@
   <data name="mnuViewOptions.Text" xml:space="preserve">
     <value>&amp;Options...</value>
   </data>
-  <data name="menuItem27.Text" xml:space="preserve">
-    <value>&amp;View</value>
+  <data name="menuItem34.Text" xml:space="preserve">
+    <value>&amp;Sending Emails</value>
   </data>
   <data name="mnuSendStart.Text" xml:space="preserve">
     <value>&amp;Start/Continue</value>
@@ -305,8 +308,8 @@
   <data name="mnuSendStop.Text" xml:space="preserve">
     <value>S&amp;top</value>
   </data>
-  <data name="menuItem34.Text" xml:space="preserve">
-    <value>&amp;Sending Emails</value>
+  <data name="menuItem39.Text" xml:space="preserve">
+    <value>&amp;Help</value>
   </data>
   <data name="menuItem40.Text" xml:space="preserve">
     <value>Online User &amp;Guide</value>
@@ -326,15 +329,30 @@
   <data name="mnuAbout.Text" xml:space="preserve">
     <value>&amp;About...</value>
   </data>
-  <data name="menuItem39.Text" xml:space="preserve">
-    <value>&amp;Help</value>
-  </data>
   <data name="statusBarMain.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="statusBarMain.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 328</value>
+  </data>
+  <data name="statusBarMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>568, 22</value>
+  </data>
+  <data name="statusBarMain.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;statusBarMain.Name" xml:space="preserve">
+    <value>statusBarMain</value>
+  </data>
+  <data name="&gt;&gt;statusBarMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusBarMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;statusBarMain.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="statusBarPanelMsg.Name" xml:space="preserve">
     <value>statusBarPanelMsg</value>
@@ -343,7 +361,7 @@
     <value>statusBarPanelMsg</value>
   </data>
   <data name="statusBarPanelMsg.Width" type="System.Int32, mscorlib">
-    <value>329</value>
+    <value>330</value>
   </data>
   <data name="statusBarPanelStatus.Name" xml:space="preserve">
     <value>statusBarPanelStatus</value>
@@ -387,24 +405,6 @@
   <data name="statusBarPanel1.Width" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="statusBarMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>568, 22</value>
-  </data>
-  <data name="statusBarMain.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;statusBarMain.Name" xml:space="preserve">
-    <value>statusBarMain</value>
-  </data>
-  <data name="&gt;&gt;statusBarMain.Type" xml:space="preserve">
-    <value>System.Windows.Forms.StatusBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;statusBarMain.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;statusBarMain.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="columnHeader3.Text" xml:space="preserve">
     <value>Email</value>
   </data>
@@ -435,13 +435,13 @@
   <data name="columnHeader10.Text" xml:space="preserve">
     <value>Carrier</value>
   </data>
-  <data name="listViewAddress.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="uxListViewAddress.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="listViewAddress.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="uxListViewAddress.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="listViewAddress.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="uxListViewAddress.Size" type="System.Drawing.Size, System.Drawing">
     <value>560, 274</value>
   </data>
   <metadata name="imageList2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -450,19 +450,19 @@
   <data name="imageList2.ImageSize" type="System.Drawing.Size, System.Drawing">
     <value>16, 16</value>
   </data>
-  <data name="listViewAddress.TabIndex" type="System.Int32, mscorlib">
+  <data name="uxListViewAddress.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;listViewAddress.Name" xml:space="preserve">
-    <value>listViewAddress</value>
+  <data name="&gt;&gt;uxListViewAddress.Name" xml:space="preserve">
+    <value>uxListViewAddress</value>
   </data>
-  <data name="&gt;&gt;listViewAddress.Type" xml:space="preserve">
+  <data name="&gt;&gt;uxListViewAddress.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;listViewAddress.Parent" xml:space="preserve">
+  <data name="&gt;&gt;uxListViewAddress.Parent" xml:space="preserve">
     <value>tabPage1</value>
   </data>
-  <data name="&gt;&gt;listViewAddress.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;uxListViewAddress.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
@@ -489,50 +489,167 @@
   <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="tabControl1.Alignment" type="System.Windows.Forms.TabAlignment, System.Windows.Forms">
-    <value>Bottom</value>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
   </data>
-  <data name="txtBody.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>560, 274</value>
+  </data>
+  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Mail Content</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>tabControlMain</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;listView1.Name" xml:space="preserve">
+    <value>listView1</value>
+  </data>
+  <data name="&gt;&gt;listView1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listView1.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;listView1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>560, 274</value>
+  </data>
+  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>Attachment</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
+    <value>tabControlMain</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lvLog.Name" xml:space="preserve">
+    <value>lvLog</value>
+  </data>
+  <data name="&gt;&gt;lvLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lvLog.Parent" xml:space="preserve">
+    <value>tabLog</value>
+  </data>
+  <data name="&gt;&gt;lvLog.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>560, 274</value>
+  </data>
+  <data name="tabLog.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tabLog.Text" xml:space="preserve">
+    <value>Log</value>
+  </data>
+  <data name="&gt;&gt;tabLog.Name" xml:space="preserve">
+    <value>tabLog</value>
+  </data>
+  <data name="&gt;&gt;tabLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabLog.Parent" xml:space="preserve">
+    <value>tabControlMain</value>
+  </data>
+  <data name="&gt;&gt;tabLog.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tabControlMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="txtBody.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="tabControlMain.ItemSize" type="System.Drawing.Size, System.Drawing">
+    <value>69, 18</value>
   </data>
-  <data name="txtBody.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="tabControlMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 28</value>
   </data>
-  <data name="txtBody.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
-    <value>Both</value>
+  <data name="tabControlMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>568, 300</value>
   </data>
-  <data name="txtBody.Size" type="System.Drawing.Size, System.Drawing">
-    <value>552, 148</value>
+  <data name="tabControlMain.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="txtBody.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;tabControlMain.Name" xml:space="preserve">
+    <value>tabControlMain</value>
+  </data>
+  <data name="&gt;&gt;tabControlMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControlMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControlMain.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;txtBody.Name" xml:space="preserve">
-    <value>txtBody</value>
-  </data>
-  <data name="&gt;&gt;txtBody.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtBody.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;txtBody.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPage4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 4</value>
-  </data>
-  <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>552, 148</value>
-  </data>
-  <data name="tabPage4.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tabPage4.Text" xml:space="preserve">
-    <value>Email Body</value>
+  <data name="tabControl1.Alignment" type="System.Windows.Forms.TabAlignment, System.Windows.Forms">
+    <value>Bottom</value>
   </data>
   <data name="&gt;&gt;tabPage4.Name" xml:space="preserve">
     <value>tabPage4</value>
@@ -545,42 +662,6 @@
   </data>
   <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="webBrowser1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="webBrowser1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="webBrowser1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>552, 148</value>
-  </data>
-  <data name="webBrowser1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;webBrowser1.Name" xml:space="preserve">
-    <value>webBrowser1</value>
-  </data>
-  <data name="&gt;&gt;webBrowser1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.WebBrowser, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;webBrowser1.Parent" xml:space="preserve">
-    <value>tabPage5</value>
-  </data>
-  <data name="&gt;&gt;webBrowser1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPage5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 4</value>
-  </data>
-  <data name="tabPage5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>552, 148</value>
-  </data>
-  <data name="tabPage5.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabPage5.Text" xml:space="preserve">
-    <value>Preview</value>
   </data>
   <data name="&gt;&gt;tabPage5.Name" xml:space="preserve">
     <value>tabPage5</value>
@@ -620,6 +701,324 @@
   </data>
   <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtBody.Name" xml:space="preserve">
+    <value>txtBody</value>
+  </data>
+  <data name="&gt;&gt;txtBody.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtBody.Parent" xml:space="preserve">
+    <value>tabPage4</value>
+  </data>
+  <data name="&gt;&gt;txtBody.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>552, 148</value>
+  </data>
+  <data name="tabPage4.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>Email Body</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.Name" xml:space="preserve">
+    <value>tabPage4</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtBody.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="txtBody.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="txtBody.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtBody.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Both</value>
+  </data>
+  <data name="txtBody.Size" type="System.Drawing.Size, System.Drawing">
+    <value>552, 148</value>
+  </data>
+  <data name="txtBody.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtBody.Name" xml:space="preserve">
+    <value>txtBody</value>
+  </data>
+  <data name="&gt;&gt;txtBody.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtBody.Parent" xml:space="preserve">
+    <value>tabPage4</value>
+  </data>
+  <data name="&gt;&gt;txtBody.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;webBrowser1.Name" xml:space="preserve">
+    <value>webBrowser1</value>
+  </data>
+  <data name="&gt;&gt;webBrowser1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.WebBrowser, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;webBrowser1.Parent" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="&gt;&gt;webBrowser1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="tabPage5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>552, 148</value>
+  </data>
+  <data name="tabPage5.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPage5.Text" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="&gt;&gt;tabPage5.Name" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="&gt;&gt;tabPage5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage5.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="webBrowser1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="webBrowser1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="webBrowser1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>552, 148</value>
+  </data>
+  <data name="webBrowser1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;webBrowser1.Name" xml:space="preserve">
+    <value>webBrowser1</value>
+  </data>
+  <data name="&gt;&gt;webBrowser1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.WebBrowser, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;webBrowser1.Parent" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="&gt;&gt;webBrowser1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
+    <value>comboBox1</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtFromEmail.Name" xml:space="preserve">
+    <value>txtFromEmail</value>
+  </data>
+  <data name="&gt;&gt;txtFromEmail.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtFromEmail.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;txtFromEmail.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtFromName.Name" xml:space="preserve">
+    <value>txtFromName</value>
+  </data>
+  <data name="&gt;&gt;txtFromName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtFromName.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;txtFromName.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtReply.Name" xml:space="preserve">
+    <value>txtReply</value>
+  </data>
+  <data name="&gt;&gt;txtReply.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtReply.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;txtReply.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;txtSubject.Name" xml:space="preserve">
+    <value>txtSubject</value>
+  </data>
+  <data name="&gt;&gt;txtSubject.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtSubject.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;txtSubject.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;uxFormat.Name" xml:space="preserve">
+    <value>uxFormat</value>
+  </data>
+  <data name="&gt;&gt;uxFormat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;uxFormat.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;uxFormat.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;comboBox3.Name" xml:space="preserve">
+    <value>comboBox3</value>
+  </data>
+  <data name="&gt;&gt;comboBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox3.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;comboBox3.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>560, 100</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="comboBox1.ItemHeight" type="System.Int32, mscorlib">
     <value>13</value>
@@ -1029,54 +1428,6 @@
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>560, 100</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>560, 274</value>
-  </data>
-  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>Mail Content</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
-    <value>tabControlMain</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="columnHeader1.Text" xml:space="preserve">
     <value>File</value>
   </data>
@@ -1089,15 +1440,6 @@
   <metadata name="contextMenuAttach.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>233, 17</value>
   </metadata>
-  <data name="menuItem53.Text" xml:space="preserve">
-    <value>Add...</value>
-  </data>
-  <data name="menuItem51.Text" xml:space="preserve">
-    <value>Open</value>
-  </data>
-  <data name="menuItem52.Text" xml:space="preserve">
-    <value>Remove</value>
-  </data>
   <data name="listView1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -1128,6 +1470,66 @@
   <data name="&gt;&gt;listView1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="menuItem53.Text" xml:space="preserve">
+    <value>Add...</value>
+  </data>
+  <data name="menuItem51.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="menuItem52.Text" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnAttAdd.Name" xml:space="preserve">
+    <value>btnAttAdd</value>
+  </data>
+  <data name="&gt;&gt;btnAttAdd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAttAdd.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btnAttAdd.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>560, 36</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>395, 54</value>
+  </metadata>
   <data name="button2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
@@ -1154,9 +1556,6 @@
   <data name="button2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>395, 54</value>
-  </metadata>
   <data name="button2.ToolTip" xml:space="preserve">
     <value>Remove</value>
   </data>
@@ -1219,66 +1618,6 @@
   <data name="&gt;&gt;btnAttAdd.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>560, 36</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>560, 274</value>
-  </data>
-  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>Attachment</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
-    <value>tabControlMain</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="columnHeader7.Text" xml:space="preserve">
-    <value>Local Time</value>
-  </data>
-  <data name="columnHeader7.Width" type="System.Int32, mscorlib">
-    <value>130</value>
-  </data>
-  <data name="columnHeader8.Text" xml:space="preserve">
-    <value>Message</value>
-  </data>
-  <data name="columnHeader8.Width" type="System.Int32, mscorlib">
-    <value>295</value>
-  </data>
   <data name="lvLog.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -1303,56 +1642,17 @@
   <data name="&gt;&gt;lvLog.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="tabLog.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+  <data name="columnHeader7.Text" xml:space="preserve">
+    <value>Local Time</value>
   </data>
-  <data name="tabLog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>560, 274</value>
+  <data name="columnHeader7.Width" type="System.Int32, mscorlib">
+    <value>130</value>
   </data>
-  <data name="tabLog.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="columnHeader8.Text" xml:space="preserve">
+    <value>Message</value>
   </data>
-  <data name="tabLog.Text" xml:space="preserve">
-    <value>Log</value>
-  </data>
-  <data name="&gt;&gt;tabLog.Name" xml:space="preserve">
-    <value>tabLog</value>
-  </data>
-  <data name="&gt;&gt;tabLog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabLog.Parent" xml:space="preserve">
-    <value>tabControlMain</value>
-  </data>
-  <data name="&gt;&gt;tabLog.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tabControlMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tabControlMain.ItemSize" type="System.Drawing.Size, System.Drawing">
-    <value>69, 18</value>
-  </data>
-  <data name="tabControlMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 28</value>
-  </data>
-  <data name="tabControlMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>568, 300</value>
-  </data>
-  <data name="tabControlMain.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tabControlMain.Name" xml:space="preserve">
-    <value>tabControlMain</value>
-  </data>
-  <data name="&gt;&gt;tabControlMain.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControlMain.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tabControlMain.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="columnHeader8.Width" type="System.Int32, mscorlib">
+    <value>295</value>
   </data>
   <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>487, 17</value>
@@ -1392,6 +1692,9 @@
   </data>
   <metadata name="tmrFailRetry.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>282, 54</value>
+  </metadata>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>395, 54</value>
   </metadata>
   <data name="toolBar1.Appearance" type="System.Windows.Forms.ToolBarAppearance, System.Windows.Forms">
     <value>Flat</value>
@@ -2282,7 +2585,7 @@
     <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Form1</value>
+    <value>FrmMain</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

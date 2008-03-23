@@ -46,7 +46,7 @@ namespace EmailSender
 	/// <summary>
 	/// Summary description for Form1.
 	/// </summary>
-	public class Form1 : System.Windows.Forms.Form
+	public class FrmMain : System.Windows.Forms.Form
 	{
 		#region Designer Created Codes
 		private System.Windows.Forms.MenuItem menuItem1;
@@ -85,8 +85,8 @@ namespace EmailSender
 		private System.Windows.Forms.MenuItem menuItem45;
 		private System.Windows.Forms.TabPage tabPage1;
 		private System.Windows.Forms.TabPage tabPage2;
-		private System.Windows.Forms.TabPage tabPage3;
-		private System.Windows.Forms.ListView listViewAddress;
+        private System.Windows.Forms.TabPage tabPage3;
+        public ListView uxListViewAddress;
 		private System.Windows.Forms.StatusBarPanel statusBarPanelMsg;
 		private System.Windows.Forms.StatusBarPanel statusBarPanelStatus;
 		private System.Windows.Forms.StatusBarPanel statusBarPanelSuccess;
@@ -195,13 +195,13 @@ namespace EmailSender
 		
 		#endregion
 		
-		public Form1()
+		public FrmMain()
 		{
 			//
 			// Required for Windows Form Designer support
 			//
 			InitializeComponent();
-			listViewAddress.ListViewItemSorter = comparer;
+			uxListViewAddress.ListViewItemSorter = comparer;
 
 		}
 
@@ -228,7 +228,7 @@ namespace EmailSender
 		private void InitializeComponent()
 		{
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.mainMenu1 = new System.Windows.Forms.MainMenu(this.components);
             this.menuItem1 = new System.Windows.Forms.MenuItem();
             this.mnuFileNew = new System.Windows.Forms.MenuItem();
@@ -300,7 +300,7 @@ namespace EmailSender
             this.statusBarPanel1 = new System.Windows.Forms.StatusBarPanel();
             this.tabControlMain = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.listViewAddress = new System.Windows.Forms.ListView();
+            this.uxListViewAddress = new System.Windows.Forms.ListView();
             this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader9 = new System.Windows.Forms.ColumnHeader();
@@ -865,32 +865,32 @@ namespace EmailSender
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.listViewAddress);
+            this.tabPage1.Controls.Add(this.uxListViewAddress);
             resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
             // 
-            // listViewAddress
+            // uxListViewAddress
             // 
-            this.listViewAddress.CheckBoxes = true;
-            this.listViewAddress.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.uxListViewAddress.CheckBoxes = true;
+            this.uxListViewAddress.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader3,
             this.columnHeader4,
             this.columnHeader9,
             this.columnHeader5,
             this.columnHeader6,
             this.columnHeader10});
-            resources.ApplyResources(this.listViewAddress, "listViewAddress");
-            this.listViewAddress.FullRowSelect = true;
-            this.listViewAddress.HideSelection = false;
-            this.listViewAddress.Name = "listViewAddress";
-            this.listViewAddress.SmallImageList = this.imageList2;
-            this.listViewAddress.UseCompatibleStateImageBehavior = false;
-            this.listViewAddress.View = System.Windows.Forms.View.Details;
-            this.listViewAddress.SelectedIndexChanged += new System.EventHandler(this.listViewAddress_SelectedIndexChanged);
-            this.listViewAddress.DoubleClick += new System.EventHandler(this.listViewAddress_DoubleClick);
-            this.listViewAddress.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.listViewAddress_ItemCheck);
-            this.listViewAddress.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listViewAddress_ColumnClick);
-            this.listViewAddress.KeyDown += new System.Windows.Forms.KeyEventHandler(this.listViewAddress_KeyDown);
+            resources.ApplyResources(this.uxListViewAddress, "uxListViewAddress");
+            this.uxListViewAddress.FullRowSelect = true;
+            this.uxListViewAddress.HideSelection = false;
+            this.uxListViewAddress.Name = "uxListViewAddress";
+            this.uxListViewAddress.SmallImageList = this.imageList2;
+            this.uxListViewAddress.UseCompatibleStateImageBehavior = false;
+            this.uxListViewAddress.View = System.Windows.Forms.View.Details;
+            this.uxListViewAddress.SelectedIndexChanged += new System.EventHandler(this.listViewAddress_SelectedIndexChanged);
+            this.uxListViewAddress.DoubleClick += new System.EventHandler(this.listViewAddress_DoubleClick);
+            this.uxListViewAddress.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.listViewAddress_ItemCheck);
+            this.uxListViewAddress.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listViewAddress_ColumnClick);
+            this.uxListViewAddress.KeyDown += new System.Windows.Forms.KeyEventHandler(this.listViewAddress_KeyDown);
             // 
             // columnHeader3
             // 
@@ -1340,7 +1340,7 @@ namespace EmailSender
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // Form1
+            // FrmMain
             // 
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.tabControlMain);
@@ -1348,7 +1348,7 @@ namespace EmailSender
             this.Controls.Add(this.toolBar1);
             this.KeyPreview = true;
             this.Menu = this.mainMenu1;
-            this.Name = "Form1";
+            this.Name = "FrmMain";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Closing += new System.ComponentModel.CancelEventHandler(this.Form1_Closing);
             ((System.ComponentModel.ISupportInitialize)(this.statusBarPanelMsg)).EndInit();
@@ -1421,7 +1421,7 @@ namespace EmailSender
             Application.ThreadException += new ThreadExceptionEventHandler(eh.OnThreadException);
 
 			//            If cul.Length > 0 Then Thread.CurrentThread.CurrentUICulture = New CultureInfo(cul)
-			Application.Run(new Form1());
+			Application.Run(new FrmMain());
 		}
 		private int nIndex = 0;
 		private bool _ifModified;
@@ -1440,6 +1440,7 @@ namespace EmailSender
 		MailComparer comparer = new MailComparer();
 		bool m_busy = false;
 
+        //A list of email addresses in memory 
 		private Dictionary<string,  int> _ht = new Dictionary<string,  int>();
 
 		private void Form1_Load(object sender, System.EventArgs e)
@@ -1458,13 +1459,13 @@ namespace EmailSender
 			_smtpClient.SessionLog += new LogEventHandler(SendMailSessionLog);
 			
 			imageList2.ImageSize = new Size(12,12);
-			imageList2.Images.Add (new Bitmap(typeof(Form1), "Image.perlblack12x12.gif"));
-			imageList2.Images.Add (new Bitmap(typeof(Form1), "Image.perlgreen12x12.gif"));
-			imageList2.Images.Add (new Bitmap(typeof(Form1), "Image.busy12.gif"));
-			imageList2.Images.Add (new Bitmap(typeof(Form1), "Image.exclamation12.gif"));
-			imageList2.Images.Add (new Bitmap(typeof(Form1), "Image.question12.gif"));
-			imageList2.Images.Add (new Bitmap(typeof(Form1), "Image.information12.gif"));
-			imageList2.Images.Add (new Bitmap(typeof(Form1), "Image.critical12.gif"));
+			imageList2.Images.Add (new Bitmap(typeof(FrmMain), "Image.perlblack12x12.gif"));
+			imageList2.Images.Add (new Bitmap(typeof(FrmMain), "Image.perlgreen12x12.gif"));
+			imageList2.Images.Add (new Bitmap(typeof(FrmMain), "Image.busy12.gif"));
+			imageList2.Images.Add (new Bitmap(typeof(FrmMain), "Image.exclamation12.gif"));
+			imageList2.Images.Add (new Bitmap(typeof(FrmMain), "Image.question12.gif"));
+			imageList2.Images.Add (new Bitmap(typeof(FrmMain), "Image.information12.gif"));
+			imageList2.Images.Add (new Bitmap(typeof(FrmMain), "Image.critical12.gif"));
 			statusBarPanelMsg.Text = "";
 		
 			toolBarButtonPause.Enabled=false;
@@ -1530,7 +1531,7 @@ namespace EmailSender
 			add = false;
 			if(!_ht.ContainsKey(email))
 			{
-				_ht.Add(email,listViewAddress.Items.Count);
+				_ht.Add(email,uxListViewAddress.Items.Count);
 				add = true;
 			}
 			else
@@ -1538,7 +1539,7 @@ namespace EmailSender
 				if (_appOptions._ifReplaceDup)
 				{
 					int pos = (int) _ht[email];
-					lvItm = listViewAddress.Items[pos];
+					lvItm = uxListViewAddress.Items[pos];
 					lvItm.SubItems[1].Text = contact;
 					lvItm.SubItems[2].Text = company;
 					lvItm.SubItems[3].Text = "Updated";
@@ -1554,7 +1555,7 @@ namespace EmailSender
 										
 			if (add)
 			{
-				lvItm = listViewAddress.Items.Add(email);
+				lvItm = uxListViewAddress.Items.Add(email);
 				lvItm.SubItems.Add (contact);
 				lvItm.SubItems.Add (company);
 				lvItm.SubItems.Add ("New");
@@ -1572,10 +1573,14 @@ namespace EmailSender
 			}
 			return ok;
 		}
+
+        /// <summary>
+        /// Copy the email addresses from listViewAddress to _ht
+        /// </summary>
 		private void LoadHT()
 		{
 			_ht.Clear();
-			foreach(ListViewItem itm in listViewAddress.Items)
+			foreach(ListViewItem itm in uxListViewAddress.Items)
 			{
 				if(!_ht.ContainsKey(itm.Text))
 					_ht.Add(itm.Text, itm.Index);
@@ -1587,103 +1592,113 @@ namespace EmailSender
 		}
 
 		#region DoVerticalImport()
-		private int DoVerticalImport(string fn)
+        /// <summary>
+        /// Import email recipients from a vertical layout text file into uxListViewAddress. See Sample_Vertical.txt
+        /// </summary>
+        /// <param name="importFileName"></param>
+        /// <returns>Number of new recipients imported</returns>
+		public int DoVerticalImport(string importFileName)
 		{
 			LoadHT();
 			int cnt = 0;
-			System.IO.FileStream fs = new FileStream(fn, FileMode.Open, FileAccess.Read);
-			// Create an instance of StreamReader to read from a file.
-			// The using statement also closes the StreamReader.
-			using (StreamReader sr = new StreamReader(fs)) 
-			{
-				string line = sr.ReadLine().Trim();
-				while (line != null) 
-				{
-					if (line!="")
-					{
-						string companyName="";
-						string address="";
-						string phone="";
-						string fax="";
-						string email="";
-						string website="";
-						string contact="";
-						string title="";
-						string memo = "";
-						Log("Importing " + line);
-						int pos = line.IndexOf(" ");
-						if (pos<0) pos = 0;
-						companyName = line.Substring(pos).Trim();
+            using (System.IO.FileStream fs = new FileStream(importFileName, FileMode.Open, FileAccess.Read))
+            {
+                // Create an instance of StreamReader to read from a file.
+                // The using statement also closes the StreamReader.
+                using (StreamReader sr = new StreamReader(fs))
+                {
+                    string line = sr.ReadLine().Trim();
+                    while (line != null)
+                    {
+                        if (line != "")
+                        {
+                            string companyName = "";
+                            string address = "";
+                            string phone = "";
+                            string fax = "";
+                            string email = "";
+                            string website = "";
+                            string contact = "";
+                            string title = "";
+                            string memo = "";
+                            Log("Importing " + line);
+                            int pos = line.IndexOf(" ");
+                            if (pos < 0) pos = 0;
+                            companyName = line.Substring(pos).Trim();
 
-						while ((line = sr.ReadLine()) != "") 
-						{
-							if (line == null) break;
-							line = line.Trim();
-							if (line.StartsWith("Address:"))
-							{
-								address = line.Replace("Address:","").Trim();
-							}
-							if (line.StartsWith("Phone:"))
-							{
-								phone = line.Replace("Phone:","").Trim();
-							}
-							if (line.StartsWith("Fax:"))
-							{
-								fax = line.Replace("Fax:","").Trim();
-							}
-							if (line.StartsWith("E-mail:"))
-							{
-								email = line.Replace("E-mail:","").Trim();
-							}
-							if (line.StartsWith("Website:"))
-							{
-								website = line.Replace("Website:","").Trim();
-							}
-							if (line.StartsWith("Memo:"))
-							{
-								memo = line.Replace("Memo:","").Trim();
-							}
-							if (line.StartsWith("Contact:"))
-							{
-								contact = line.Replace("Contact:","").Trim();
-								if (contact.IndexOf(",")>0)
-								{
-									title = contact.Substring(contact.IndexOf(",") + 1).Trim();
-									contact = contact.Substring(0, contact.IndexOf(","));
-								}
-								else
-									title = "";
-								//								if (contact.StartsWith("Mr. ")) contact = contact.Substring(3).Trim();
-								//								if (contact.StartsWith("Mr ")) contact = contact.Substring(3).Trim();
-								//								if (contact.StartsWith("Ms. ")) contact = contact.Substring(3).Trim();
-								//								if (contact.StartsWith("Ms ")) contact = contact.Substring(3).Trim();
-							}
-						}
-						
-						if(ImportAddr( email, contact, companyName, memo))
-							cnt++;
+                            while ((line = sr.ReadLine()) != "")
+                            {
+                                if (line == null) break;
+                                line = line.Trim();
+                                if (line.StartsWith("Address:"))
+                                {
+                                    address = line.Replace("Address:", "").Trim();
+                                }
+                                if (line.StartsWith("Phone:"))
+                                {
+                                    phone = line.Replace("Phone:", "").Trim();
+                                }
+                                if (line.StartsWith("Fax:"))
+                                {
+                                    fax = line.Replace("Fax:", "").Trim();
+                                }
+                                if (line.StartsWith("E-mail:"))
+                                {
+                                    email = line.Replace("E-mail:", "").Trim();
+                                }
+                                if (line.StartsWith("Website:"))
+                                {
+                                    website = line.Replace("Website:", "").Trim();
+                                }
+                                if (line.StartsWith("Memo:"))
+                                {
+                                    memo = line.Replace("Memo:", "").Trim();
+                                }
+                                if (line.StartsWith("Contact:"))
+                                {
+                                    contact = line.Replace("Contact:", "").Trim();
+                                    if (contact.IndexOf(",") > 0)
+                                    {
+                                        title = contact.Substring(contact.IndexOf(",") + 1).Trim();
+                                        contact = contact.Substring(0, contact.IndexOf(","));
+                                    }
+                                    else
+                                        title = "";
+                                }
+                            }
 
-					}
-					else
-					{
-						line = sr.ReadLine();
-						if(line!=null)
-							line = line.Trim();	
-					}
-				}
-				//sr.Close();
-			}
+                            if (ImportAddr(email, contact, companyName, memo))
+                                cnt++;
+
+                        }
+                        else
+                        {
+                            line = sr.ReadLine();
+                            if (line != null)
+                                line = line.Trim();
+                        }
+                    }
+                    sr.Close();
+                }
+                fs.Close();
+            }
 			UnloadHT();
 			return cnt;
 		}
 		#endregion
 
 		#region DoDelimitedImport()
-		private int DoDelimitedImport(string fn, char[] separator)
+        /// <summary>
+        /// Import recipients from a common delimited file. 
+        /// </summary>
+        /// <param name="importFileName"></param>
+        /// <param name="separator">list of delimiters</param>
+        /// <returns></returns>
+		public int DoDelimitedImport(string importFileName, char[] separator)
 		{
 			LoadHT();
 			int cnt = 0;
-			System.IO.FileStream fs = new FileStream(fn, FileMode.Open, FileAccess.Read);
+			System.IO.FileStream fs = new FileStream(importFileName, FileMode.Open, FileAccess.Read);
 			using (StreamReader sr = new StreamReader(fs)) 
 			{
 				string line; //= sr.ReadLine();
@@ -1704,7 +1719,7 @@ namespace EmailSender
 						}
 						else
 						{
-							Log("Not enough fields. Make sure the file is in correct format!"); 
+							Log("Incorrect number of fields. Make sure the file is in correct format!"); 
 						}
 					}
 				}
@@ -1813,7 +1828,7 @@ namespace EmailSender
 				}
 				statusBarPanelMsg.Text = cnt + " record(s) imported.  "; 
 				statusBarPanelStatus.Text = "Ready";
-				statusBarPanelTotal.Text = "Total: " + listViewAddress.Items.Count.ToString();
+				statusBarPanelTotal.Text = "Total: " + uxListViewAddress.Items.Count.ToString();
 			}
 		}
 
@@ -1842,7 +1857,7 @@ namespace EmailSender
 
 		private void menuItem26_Click(object sender, System.EventArgs e)
 		{
-			foreach (ListViewItem xitem in listViewAddress.Items) 
+			foreach (ListViewItem xitem in uxListViewAddress.Items) 
 			{ 
 				xitem.Selected = (xitem.ImageIndex == 6);
 			} 
@@ -1852,7 +1867,7 @@ namespace EmailSender
 
 		private void menuItem24_Click(object sender, System.EventArgs e)
 		{
-			foreach (ListViewItem xitem in listViewAddress.Items) 
+			foreach (ListViewItem xitem in uxListViewAddress.Items) 
 			{ 
 				xitem.Selected = !(xitem.SubItems[3].Text == "Send completed.");
 			} 
@@ -1861,7 +1876,7 @@ namespace EmailSender
 
 		private void menuItem25_Click(object sender, System.EventArgs e)
 		{
-			foreach (ListViewItem xitem in listViewAddress.Items) 
+			foreach (ListViewItem xitem in uxListViewAddress.Items) 
 			{ 
 				xitem.Selected = (xitem.SubItems[3].Text == "Send completed.");
 			} 
@@ -1898,14 +1913,14 @@ namespace EmailSender
 			else //if( (e.Column >= 0) & (e.Column <= 2) )
 				comparer.Column = e.Column;
 				
-			listViewAddress.Sort();
+			uxListViewAddress.Sort();
 
 		}
 
 		private void menuItem23_Click(object sender, System.EventArgs e)
 		{
 			_ht.Clear();
-			foreach (ListViewItem xitem in listViewAddress.Items) 
+			foreach (ListViewItem xitem in uxListViewAddress.Items) 
 			{ 
 				if(_ht.ContainsKey(xitem.Text))
 					xitem.Selected = true;
@@ -1939,7 +1954,7 @@ namespace EmailSender
 
 		private void menuItem69_Click(object sender, System.EventArgs e)
 		{
-			foreach (ListViewItem xitem in listViewAddress.Items) 
+			foreach (ListViewItem xitem in uxListViewAddress.Items) 
 			{ 
 				xitem.Selected = !IsEmail(xitem.Text);
 			} 
@@ -1953,7 +1968,7 @@ namespace EmailSender
 			{
 				sw.WriteLine();
 				sw.WriteLine();
-				foreach (ListViewItem xitem in listViewAddress.Items) 
+				foreach (ListViewItem xitem in uxListViewAddress.Items) 
 				{ 
 					if ((_blnExportAll) || (xitem.Selected))
 					{
@@ -1979,7 +1994,7 @@ namespace EmailSender
 			System.IO.FileStream fs = new FileStream(fn, FileMode.Create, FileAccess.ReadWrite);
 			using (StreamWriter sw = new StreamWriter(fs)) 
 			{
-				foreach (ListViewItem xitem in listViewAddress.Items) 
+				foreach (ListViewItem xitem in uxListViewAddress.Items) 
 				{ 
 					if ((_blnExportAll) || (xitem.Selected))
 					{
@@ -2003,7 +2018,7 @@ namespace EmailSender
 		{
 			int cnt = 0;
 			ExternalData myList = new ExternalData();
-			foreach (ListViewItem xitem in listViewAddress.Items) 
+			foreach (ListViewItem xitem in uxListViewAddress.Items) 
 			{ 
 				if ((_blnExportAll) || (xitem.Selected))
 				{
@@ -2027,7 +2042,7 @@ namespace EmailSender
 			System.IO.FileStream fs = new FileStream(fn, FileMode.Create, FileAccess.ReadWrite);
 			using (StreamWriter sw = new StreamWriter(fs)) 
 			{
-				foreach (ListViewItem xitem in listViewAddress.Items) 
+				foreach (ListViewItem xitem in uxListViewAddress.Items) 
 				{ 
 					if ((_blnExportAll) || (xitem.Selected))
 					{
@@ -2084,7 +2099,7 @@ namespace EmailSender
 				}
 				statusBarPanelMsg.Text = cnt + " record(s) exported.  "; 
 				statusBarPanelStatus.Text = "Ready";
-				statusBarPanelTotal.Text = "Total: " + listViewAddress.Items.Count.ToString();
+				statusBarPanelTotal.Text = "Total: " + uxListViewAddress.Items.Count.ToString();
 			}		
 		}
 
@@ -2127,7 +2142,7 @@ namespace EmailSender
 
 		private void menuItem13_Click(object sender, System.EventArgs e)
 		{
-			foreach(ListViewItem itm in listViewAddress.SelectedItems)
+			foreach(ListViewItem itm in uxListViewAddress.SelectedItems)
 			{
 				FrmProperties frm = new FrmProperties();
 				frm.textBox1.Text= itm.Text;
@@ -2153,13 +2168,13 @@ namespace EmailSender
 		private void menuItem14_Click(object sender, System.EventArgs e)
 		{
 
-			if (listViewAddress.SelectedItems.Count > 0 ) 
+			if (uxListViewAddress.SelectedItems.Count > 0 ) 
 			{
 				DialogResult result;
-				result = MessageBox.Show ("This will remove selected " + listViewAddress.SelectedItems.Count.ToString() + " item(s). Do you want to continue?", _oldFormTitle, MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+				result = MessageBox.Show ("This will remove selected " + uxListViewAddress.SelectedItems.Count.ToString() + " item(s). Do you want to continue?", _oldFormTitle, MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
 				if(result == DialogResult.Yes)
 				{
-					foreach (ListViewItem itm in listViewAddress.SelectedItems)
+					foreach (ListViewItem itm in uxListViewAddress.SelectedItems)
 					{
 						itm.Remove();
 					}
@@ -2203,7 +2218,7 @@ namespace EmailSender
 			FrmProperties frm = new FrmProperties();
 			if (frm.ShowDialog() == DialogResult.OK)
 			{
-				ListViewItem itm = listViewAddress.Items.Add(frm.textBox1.Text.Trim());
+				ListViewItem itm = uxListViewAddress.Items.Add(frm.textBox1.Text.Trim());
 				itm.SubItems.Add(frm.textBox2.Text.Trim());
 				itm.SubItems.Add(frm.textBox5.Text.Trim());
 				itm.SubItems.Add(frm.textBox3.Text.Trim());
@@ -2217,7 +2232,7 @@ namespace EmailSender
 
 		private void menuItem16_Click(object sender, System.EventArgs e)
 		{
-			foreach(ListViewItem itm in listViewAddress.Items)
+			foreach(ListViewItem itm in uxListViewAddress.Items)
 			{
 				itm.Selected = true;
 			}
@@ -2225,7 +2240,7 @@ namespace EmailSender
 
 		private void menuItem21_Click(object sender, System.EventArgs e)
 		{
-			foreach(ListViewItem itm in listViewAddress.SelectedItems)
+			foreach(ListViewItem itm in uxListViewAddress.SelectedItems)
 			{
 				itm.Checked = true;
 			}
@@ -2233,7 +2248,7 @@ namespace EmailSender
 
 		private void menuItem22_Click(object sender, System.EventArgs e)
 		{
-			foreach(ListViewItem itm in listViewAddress.SelectedItems)
+			foreach(ListViewItem itm in uxListViewAddress.SelectedItems)
 			{
 				itm.Checked = false;
 			}
@@ -2241,7 +2256,7 @@ namespace EmailSender
 
 		private void menuItem64_Click(object sender, System.EventArgs e)
 		{
-			foreach(ListViewItem itm in listViewAddress.Items)
+			foreach(ListViewItem itm in uxListViewAddress.Items)
 			{
 				itm.Selected = !itm.Selected;
 			}
@@ -2309,7 +2324,7 @@ namespace EmailSender
             }
             else
             {
-            ListViewItem itm = this.listViewAddress.Items[pIndex];
+            ListViewItem itm = this.uxListViewAddress.Items[pIndex];
 			itm.SubItems[3].Text = pErrorText;
 			itm.ImageIndex = 6;
 			if(!_appOptions._ifRetryFail) itm.Checked = false;
@@ -2325,7 +2340,7 @@ namespace EmailSender
                 this.Invoke(new SendViaMapiDelegate(SendViaMapi), new object[] { pAdr });
             else
             {
-                ListViewItem itm = this.listViewAddress.Items[pAdr.Index];
+                ListViewItem itm = this.uxListViewAddress.Items[pAdr.Index];
                 itm.SubItems[5].Text = "MAPI";
                 Mapi ma = new Mapi();
                 
@@ -2355,7 +2370,7 @@ namespace EmailSender
                 itm.ImageIndex = 0;
                 m_cntSuccess++;
                 DispStatus();
-                if (listViewAddress.SelectedItems.Count == 0)
+                if (uxListViewAddress.SelectedItems.Count == 0)
                 {  //all sent
                     Log("All Sent");
                 }
@@ -2376,7 +2391,7 @@ namespace EmailSender
                 if (_appOptions._ifRetryFail)
                 {
                     int cnt = 0;
-                    foreach (ListViewItem itm in listViewAddress.Items)
+                    foreach (ListViewItem itm in uxListViewAddress.Items)
                     {
                         if (itm.Checked) cnt++;
                     }
@@ -2584,7 +2599,7 @@ namespace EmailSender
                 this.Invoke(new ShowItemCarrierDelegate(ShowItemCarrier), new object[] { pIndex, pText });
             else
             {
-                ListViewItem itm = this.listViewAddress.Items[pIndex]; //2008-03-22 VM Change listView1 to listViewAddress
+                ListViewItem itm = this.uxListViewAddress.Items[pIndex]; //2008-03-22 VM Change listView1 to listViewAddress
                 itm.SubItems[5].Text = pText;
             }
         }
@@ -2602,7 +2617,7 @@ namespace EmailSender
 			{
                 Dictionary<string, string> ht = new Dictionary<string, string>();// Hashtable(new CaseInsensitiveHashCodeProvider(), new CaseInsensitiveComparer());
 			
-				foreach(ListViewItem itm in listViewAddress.CheckedItems)
+				foreach(ListViewItem itm in uxListViewAddress.CheckedItems)
 				{
 					if(ht.ContainsKey(itm.Text))
 					{
@@ -2624,7 +2639,7 @@ namespace EmailSender
 				m_paused = false;
 				SetBusy(true);
 				statusBarPanelMsg.Text = "Continue";
-				foreach(ListViewItem itm in listViewAddress.CheckedItems)
+				foreach(ListViewItem itm in uxListViewAddress.CheckedItems)
 				{
 					if (itm.SubItems[3].Text == "Paused")
 					{
@@ -2646,12 +2661,12 @@ namespace EmailSender
 			
 
 				CheckDuplicate();
-				foreach(ListViewItem itm in listViewAddress.CheckedItems)
+				foreach(ListViewItem itm in uxListViewAddress.CheckedItems)
 				{
 					itm.SubItems[3].Text = "Queued";
 					itm.ImageIndex = 0;
 				}
-				_cntQueued = listViewAddress.CheckedItems.Count;
+				_cntQueued = uxListViewAddress.CheckedItems.Count;
 				if (_cntQueued==0)
 				{
 					Log("No checked address to send.");
@@ -2681,7 +2696,7 @@ namespace EmailSender
             {
                 //2008-03-22 VM It is listViewAddress, not listView1
                 //ListViewItem itm = listView1.Items[pIndex];
-                ListViewItem itm = listViewAddress.Items[pIndex];
+                ListViewItem itm = uxListViewAddress.Items[pIndex];
                 itm.ImageIndex = 1;
                 itm.SubItems[3].Text = pText;
             }
@@ -2832,7 +2847,7 @@ namespace EmailSender
             if (pIsUpdate)
             {
                 listView1.Items.Clear();
-                listViewAddress.Items.Clear();
+                uxListViewAddress.Items.Clear();
 
                 if (_mainList==null) return;
 
@@ -2852,7 +2867,7 @@ namespace EmailSender
 
                 foreach (Address addr in _mainList.Addresses)
                 {
-                    xitem = listViewAddress.Items.Add(addr.Email);
+                    xitem = uxListViewAddress.Items.Add(addr.Email);
                     xitem.SubItems.Add(addr.Name);
                     xitem.SubItems.Add(addr.Company);
                     xitem.SubItems.Add(addr.Status);
@@ -2884,7 +2899,7 @@ namespace EmailSender
 
                 _mainList.ClearAddress();
                 int index = 0;
-                foreach (ListViewItem xitem in listViewAddress.Items)
+                foreach (ListViewItem xitem in uxListViewAddress.Items)
                 {
                     _mainList.AddAddress(new Address(index,xitem.Text, xitem.SubItems[1].Text, xitem.SubItems[2].Text, xitem.SubItems[3].Text, xitem.SubItems[4].Text, xitem.SubItems[5].Text, xitem.Checked, xitem.ImageIndex));
                     index++;
@@ -2963,7 +2978,7 @@ namespace EmailSender
 		/// <summary>
 		/// Addes addresses and attachments to current from selected profile.
 		/// </summary>
-		/// <param name="fn"></param>
+		/// <param name="importFileName"></param>
 		private void MergeProfile(string fn)
 		{
 			ClassFile newFile;
@@ -2989,7 +3004,7 @@ namespace EmailSender
 									
 			foreach (Address addr in newFile.Addresses) 
 			{ 
-				xitem = listViewAddress.Items.Add(addr.Email); 
+				xitem = uxListViewAddress.Items.Add(addr.Email); 
 				xitem.SubItems.Add(addr.Name); 
 				xitem.SubItems.Add(addr.Company); 
 				xitem.SubItems.Add(addr.Status); 
@@ -3083,7 +3098,7 @@ namespace EmailSender
 			txtSubject.Text = newFile.Subject; 
 			txtBody.Text = newFile.Body; 
 			listView1.Items.Clear();
-			listViewAddress.Items.Clear();
+			uxListViewAddress.Items.Clear();
 			
 			_fileTitle = "";
 			IfDirty = false;
@@ -3223,7 +3238,7 @@ namespace EmailSender
                     if (_appOptions._ifRetryFail)
                     {
                         int cnt = 0;
-                        foreach (ListViewItem itm in listViewAddress.Items)
+                        foreach (ListViewItem itm in uxListViewAddress.Items)
                         {
                             if (itm.Checked) cnt++;
                         }
@@ -3293,7 +3308,7 @@ namespace EmailSender
 		
 		private ListViewItem FindItem(string jobID)
 		{
-			return listViewAddress.Items[int.Parse(jobID)];
+			return uxListViewAddress.Items[int.Parse(jobID)];
 //			foreach(ListViewItem itm in listViewAddress.Items)
 //			{
 //				if(itm.Tag.ToString() == jobID)
@@ -3340,7 +3355,7 @@ namespace EmailSender
 			m_paused = true;
 			statusBarPanelStatus.Text = "Pause";
 			statusBarPanelMsg.Text = "Stopping";
-			foreach(ListViewItem itm in listViewAddress.CheckedItems)
+			foreach(ListViewItem itm in uxListViewAddress.CheckedItems)
 			{
 				if (itm.SubItems[3].Text == "Queued")
 				{
@@ -3387,7 +3402,7 @@ namespace EmailSender
 			m_stop = true;
 			Log("Stopping");
 			statusBarPanelMsg.Text = "Stopping";
-			foreach(ListViewItem itm in listViewAddress.CheckedItems)
+			foreach(ListViewItem itm in uxListViewAddress.CheckedItems)
 			{
 				if (itm.SubItems[3].Text == "Queued")
 				{
@@ -3493,7 +3508,7 @@ namespace EmailSender
 			FrmFind frm = new FrmFind();
 			if (frm.ShowDialog()==DialogResult.OK)
 			{
-				foreach(ListViewItem itm in listViewAddress.SelectedItems)
+				foreach(ListViewItem itm in uxListViewAddress.SelectedItems)
 				{
 					itm.Selected = false;
 				}
@@ -3512,26 +3527,26 @@ namespace EmailSender
 			else
 			{
 				int startIndex;
-				if (listViewAddress.SelectedItems.Count==0)
+				if (uxListViewAddress.SelectedItems.Count==0)
 					startIndex = 0;
 				else
 				{
-					startIndex = listViewAddress.SelectedItems[0].Index + 1;
+					startIndex = uxListViewAddress.SelectedItems[0].Index + 1;
 				}
-				for (int i = startIndex;i<listViewAddress.Items.Count; i++)
+				for (int i = startIndex;i<uxListViewAddress.Items.Count; i++)
 				{
-					foreach(ListViewItem.ListViewSubItem subItm in listViewAddress.Items[i].SubItems)
+					foreach(ListViewItem.ListViewSubItem subItm in uxListViewAddress.Items[i].SubItems)
 					{
 						string s = subItm.Text.ToUpper();
 						if (s.IndexOf(m_FindWhat.ToUpper())>=0)
 						{
-							foreach(ListViewItem itm in listViewAddress.SelectedItems)
+							foreach(ListViewItem itm in uxListViewAddress.SelectedItems)
 								itm.Selected = false;
-							listViewAddress.Items[i].Selected = true;
-							listViewAddress.Items[i].EnsureVisible();
+							uxListViewAddress.Items[i].Selected = true;
+							uxListViewAddress.Items[i].EnsureVisible();
 							return; //found
 						}
-					listViewAddress.Items[i].Selected = false;
+					uxListViewAddress.Items[i].Selected = false;
 					}
 				}
 				MessageBox.Show("No more can be found");
