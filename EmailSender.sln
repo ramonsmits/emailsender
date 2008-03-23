@@ -12,7 +12,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{91A864AF-F02
 		Doc\GNU GENERAL PUBLIC LICENSE.txt = Doc\GNU GENERAL PUBLIC LICENSE.txt
 		Doc\ReadMe.txt = Doc\ReadMe.txt
 		Doc\ReleaseNotes.txt = Doc\ReleaseNotes.txt
-		Doc\SAMPLE.TXT = Doc\SAMPLE.TXT
 		Doc\Sample_Vertical.txt = Doc\Sample_Vertical.txt
 		Doc\Screenshot1.png = Doc\Screenshot1.png
 		Doc\Screenshot2.png = Doc\Screenshot2.png
