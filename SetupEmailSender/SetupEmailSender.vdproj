@@ -15,6 +15,12 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_25C609989E92C897E1FB9C62DFCD9CEF"
+        "OwnerKey" = "8:_A5FF59CC72E64C2F8D51BC7FB5F1108B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_48B8FEA7B1A0403295BF12BBD408CA7A"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -29,6 +35,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_A5FF59CC72E64C2F8D51BC7FB5F1108B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_25C609989E92C897E1FB9C62DFCD9CEF"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -51,13 +63,23 @@
         "InstallerBootstrapper" = "3:1"
             "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
             {
-            "Enabled" = "11:FALSE"
+            "Enabled" = "11:TRUE"
             "PromptEnabled" = "11:TRUE"
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
                 "Items"
                 {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Net.Framework.2.0"
+                    {
+                    "Name" = "8:.NET Framework 2.0 (x86)"
+                    "ProductCode" = "8:Microsoft.Net.Framework.2.0"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Windows.Installer.3.1"
+                    {
+                    "Name" = "8:Windows Installer 3.1"
+                    "ProductCode" = "8:Microsoft.Windows.Installer.3.1"
+                    }
                 }
             }
         }
@@ -117,6 +139,37 @@
         }
         "File"
         {
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_25C609989E92C897E1FB9C62DFCD9CEF"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:LumiSoft.Net, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86"
+                "ScatterAssemblies"
+                {
+                    "_25C609989E92C897E1FB9C62DFCD9CEF"
+                    {
+                    "Name" = "8:LumiSoft.Net.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:LumiSoft.Net.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_086B0ED04D4549EF81FABD6336EF0BE8"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_48B8FEA7B1A0403295BF12BBD408CA7A"
             {
             "SourcePath" = "8:..\\Doc\\GNU GENERAL PUBLIC LICENSE.txt"
@@ -205,14 +258,14 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:EmailSender"
         "ProductCode" = "8:{936D62A9-BB89-446F-9EA4-34563D90006C}"
-        "PackageCode" = "8:{D898CC29-4892-48B6-8C8C-1F65CAA38634}"
+        "PackageCode" = "8:{34203A11-DF48-4F2F-98E2-D8101E992488}"
         "UpgradeCode" = "8:{D99FD770-2D2E-4CD6-84D1-DAF2F3B4D70B}"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
         "ProductVersion" = "8:1.2.1"
-        "Manufacturer" = "8:emailsender.sourceforge.net"
+        "Manufacturer" = "8:EmailSender"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:emailsender.sourceforge.net"
         "Title" = "8:EmailSender"
@@ -220,7 +273,7 @@
         "ARPCONTACT" = "8:Someone"
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
-        "ARPURLINFOABOUT" = "8:emailsender.sourceforge.net"
+        "ARPURLINFOABOUT" = "8:http://emailsender.sourceforge.net"
         "ARPPRODUCTICON" = "8:"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
@@ -485,53 +538,6 @@
                             "Setting" = "3:0"
                             "Value" = "3:1"
                             "DefaultValue" = "3:1"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                        }
-                    }
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_83B63F1C01E94D4AB2D9ED635D711CD6"
-                    {
-                    "Sequence" = "3:120"
-                    "DisplayName" = "8:License Agreement"
-                    "UseDynamicProperties" = "11:TRUE"
-                    "IsDependency" = "11:FALSE"
-                    "SourcePath" = "8:<VsdDialogDir>\\VsdLicenseDlg.wid"
-                        "Properties"
-                        {
-                            "BannerBitmap"
-                            {
-                            "Name" = "8:BannerBitmap"
-                            "DisplayName" = "8:#1001"
-                            "Description" = "8:#1101"
-                            "Type" = "3:8"
-                            "ContextData" = "8:Bitmap"
-                            "Attributes" = "3:4"
-                            "Setting" = "3:1"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                            "EulaText"
-                            {
-                            "Name" = "8:EulaText"
-                            "DisplayName" = "8:#1008"
-                            "Description" = "8:#1108"
-                            "Type" = "3:6"
-                            "ContextData" = "8:"
-                            "Attributes" = "3:0"
-                            "Setting" = "3:2"
-                            "Value" = "8:_48B8FEA7B1A0403295BF12BBD408CA7A"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                            "Sunken"
-                            {
-                            "Name" = "8:Sunken"
-                            "DisplayName" = "8:#1007"
-                            "Description" = "8:#1107"
-                            "Type" = "3:5"
-                            "ContextData" = "8:4;True=4;False=0"
-                            "Attributes" = "3:0"
-                            "Setting" = "3:0"
-                            "Value" = "3:4"
-                            "DefaultValue" = "3:4"
                             "UsePlugInResources" = "11:TRUE"
                             }
                         }
@@ -856,7 +862,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_A5FF59CC72E64C2F8D51BC7FB5F1108B"
             {
-            "SourcePath" = "8:..\\EmailSender\\obj\\x64\\Debug\\EmailSender.exe"
+            "SourcePath" = "8:..\\EmailSender\\obj\\x86\\Debug\\EmailSender.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_086B0ED04D4549EF81FABD6336EF0BE8"
